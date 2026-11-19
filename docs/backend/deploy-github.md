@@ -12,6 +12,18 @@ Este workflow **não** altera o projeto **`bomfim`** (nem no GitHub nem em `/opt
 
 O repositório **não** envia `.env`. Crie `/opt/site-bomfim/.env` manualmente a partir de [`.env.bomfim.example`](../../.env.bomfim.example).
 
+Se o servidor só tem `.env`, o Actions falhou no **SCP/SSH**. Siga [deploy-ssh-github.md](./deploy-ssh-github.md) ou use o **bootstrap** abaixo.
+
+## Bootstrap imediato no Vultr (sem Actions)
+
+```bash
+sudo apt install -y git nodejs npm zip
+curl -fsSL https://raw.githubusercontent.com/rogeriolia/site-bomfim/main/scripts/server/bootstrap-from-github.sh -o /tmp/bootstrap.sh
+sudo bash /tmp/bootstrap.sh
+```
+
+(Preserva `/opt/site-bomfim/.env` se já existir.)
+
 ## Secrets do GitHub (Settings → Secrets and variables → Actions)
 
 Configure **somente neste repositório `site-bomfim`:**
