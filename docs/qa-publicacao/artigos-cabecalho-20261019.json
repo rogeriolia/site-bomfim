@@ -1,0 +1,237 @@
+{
+  "mobile320": [
+    {
+      "lines": 2,
+      "overflow": false,
+      "title": "Estoque cheio, produto faltando: por onde começar?"
+    },
+    {
+      "lines": 3,
+      "overflow": false,
+      "title": "Varejo perto da estabilidade: o que a média esconde do seu mix"
+    },
+    {
+      "lines": 3,
+      "overflow": false,
+      "title": "Seu pedido nasceu no WhatsApp. Quem acompanha agora?"
+    },
+    {
+      "lines": 3,
+      "overflow": false,
+      "title": "IA na pequena empresa: escolha uma tarefa antes da ferramenta"
+    },
+    {
+      "lines": 2,
+      "overflow": false,
+      "title": "O preço mudou. Você sabe de onde veio o aumento?"
+    },
+    {
+      "lines": 3,
+      "overflow": false,
+      "title": "Quanto tempo sua equipe perde procurando a informação certa?"
+    },
+    {
+      "lines": 3,
+      "overflow": false,
+      "title": "Reposição de peças: o que olhar quando as vendas oscilam?"
+    },
+    {
+      "lines": 3,
+      "overflow": false,
+      "title": "Embalagem e etiqueta: o que precisa continuar legível até a entrega?"
+    },
+    {
+      "lines": 3,
+      "overflow": false,
+      "title": "Vender mais exige rever a reposição? Nem sempre do mesmo jeito"
+    },
+    {
+      "lines": 3,
+      "overflow": false,
+      "title": "Antes de automatizar o estoque, combine o que cada status significa"
+    },
+    {
+      "lines": 2,
+      "overflow": false,
+      "title": "O que compõe o valor do frete?"
+    },
+    {
+      "lines": 2,
+      "overflow": false,
+      "title": "Vale-pedágio: o que conferir na contratação?"
+    },
+    {
+      "lines": 3,
+      "overflow": false,
+      "title": "Piso mínimo: lotação e fracionada têm o mesmo escopo?"
+    },
+    {
+      "lines": 2,
+      "overflow": false,
+      "title": "Ad valorem, GRIS e seguro: entenda a diferença"
+    },
+    {
+      "lines": 2,
+      "overflow": false,
+      "title": "Quando a informação da entrega chega tarde"
+    },
+    {
+      "lines": 2,
+      "overflow": false,
+      "title": "O que pode atrasar uma coleta antes da saída"
+    },
+    {
+      "lines": 3,
+      "overflow": false,
+      "title": "Como planejar fretes recorrentes sem comprometer o abastecimento"
+    },
+    {
+      "lines": 3,
+      "overflow": false,
+      "title": "Além do preço: o que avaliar numa cotação de carga fracionada"
+    },
+    {
+      "lines": 3,
+      "overflow": false,
+      "title": "Como confirmar se uma rota atende sua operação no Nordeste"
+    },
+    {
+      "lines": 2,
+      "overflow": false,
+      "title": "Conferência de carga: o que registrar ao receber"
+    },
+    {
+      "lines": 2,
+      "overflow": false,
+      "title": "Como preparar uma carga fracionada para coleta"
+    }
+  ],
+  "desktop1280": [
+    {
+      "width": 1280,
+      "lines": 1,
+      "overflow": false,
+      "title": "Estoque cheio, produto faltando: por onde começar?"
+    },
+    {
+      "width": 1280,
+      "lines": 2,
+      "overflow": false,
+      "title": "Varejo perto da estabilidade: o que a média esconde do seu mix"
+    },
+    {
+      "width": 1280,
+      "lines": 1,
+      "overflow": false,
+      "title": "Seu pedido nasceu no WhatsApp. Quem acompanha agora?"
+    },
+    {
+      "width": 1280,
+      "lines": 2,
+      "overflow": false,
+      "title": "IA na pequena empresa: escolha uma tarefa antes da ferramenta"
+    },
+    {
+      "width": 1280,
+      "lines": 1,
+      "overflow": false,
+      "title": "O preço mudou. Você sabe de onde veio o aumento?"
+    },
+    {
+      "width": 1280,
+      "lines": 2,
+      "overflow": false,
+      "title": "Quanto tempo sua equipe perde procurando a informação certa?"
+    },
+    {
+      "width": 1280,
+      "lines": 1,
+      "overflow": false,
+      "title": "Reposição de peças: o que olhar quando as vendas oscilam?"
+    },
+    {
+      "width": 1280,
+      "lines": 2,
+      "overflow": false,
+      "title": "Embalagem e etiqueta: o que precisa continuar legível até a entrega?"
+    },
+    {
+      "width": 1280,
+      "lines": 2,
+      "overflow": false,
+      "title": "Vender mais exige rever a reposição? Nem sempre do mesmo jeito"
+    },
+    {
+      "width": 1280,
+      "lines": 2,
+      "overflow": false,
+      "title": "Antes de automatizar o estoque, combine o que cada status significa"
+    },
+    {
+      "width": 1280,
+      "lines": 1,
+      "overflow": false,
+      "title": "O que compõe o valor do frete?"
+    },
+    {
+      "width": 1280,
+      "lines": 1,
+      "overflow": false,
+      "title": "Vale-pedágio: o que conferir na contratação?"
+    },
+    {
+      "width": 1280,
+      "lines": 1,
+      "overflow": false,
+      "title": "Piso mínimo: lotação e fracionada têm o mesmo escopo?"
+    },
+    {
+      "width": 1280,
+      "lines": 1,
+      "overflow": false,
+      "title": "Ad valorem, GRIS e seguro: entenda a diferença"
+    },
+    {
+      "width": 1280,
+      "lines": 1,
+      "overflow": false,
+      "title": "Quando a informação da entrega chega tarde"
+    },
+    {
+      "width": 1280,
+      "lines": 1,
+      "overflow": false,
+      "title": "O que pode atrasar uma coleta antes da saída"
+    },
+    {
+      "width": 1280,
+      "lines": 2,
+      "overflow": false,
+      "title": "Como planejar fretes recorrentes sem comprometer o abastecimento"
+    },
+    {
+      "width": 1280,
+      "lines": 2,
+      "overflow": false,
+      "title": "Além do preço: o que avaliar numa cotação de carga fracionada"
+    },
+    {
+      "width": 1280,
+      "lines": 2,
+      "overflow": false,
+      "title": "Como confirmar se uma rota atende sua operação no Nordeste"
+    },
+    {
+      "width": 1280,
+      "lines": 1,
+      "overflow": false,
+      "title": "Conferência de carga: o que registrar ao receber"
+    },
+    {
+      "width": 1280,
+      "lines": 1,
+      "overflow": false,
+      "title": "Como preparar uma carga fracionada para coleta"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+"""Bomfim site API (FastAPI)."""

@@ -1,0 +1,372 @@
+[
+  {
+    "slug": "estoque-cheio-produto-faltando",
+    "title": "Estoque cheio, produto faltando: por onde começar?",
+    "slides": [
+      {
+        "src": "carrosseis/estoque-cheio-produto-faltando/01.png",
+        "editable": "carrosseis/estoque-cheio-produto-faltando/01.svg",
+        "alt": "Estoque cheio. Produto faltando.. O saldo total pode esconder o item que seu cliente precisa.",
+        "title": "Estoque cheio. Produto faltando."
+      },
+      {
+        "src": "carrosseis/estoque-cheio-produto-faltando/02.png",
+        "editable": "carrosseis/estoque-cheio-produto-faltando/02.svg",
+        "alt": "O que está no depósito nem sempre está disponível.. Produtos reservados, bloqueados ou sem condição de venda precisam aparecer separados.",
+        "title": "O que está no depósito nem sempre está disponível."
+      },
+      {
+        "src": "carrosseis/estoque-cheio-produto-faltando/03.png",
+        "editable": "carrosseis/estoque-cheio-produto-faltando/03.svg",
+        "alt": "Quatro semanas são suficientes?. Se a reposição leva seis, o saldo merece atenção. A conta inicial não define o estoque de segurança.",
+        "title": "Quatro semanas são suficientes?"
+      },
+      {
+        "src": "carrosseis/estoque-cheio-produto-faltando/04.png",
+        "editable": "carrosseis/estoque-cheio-produto-faltando/04.svg",
+        "alt": "Comece por um grupo de itens.. O caso CSN relatou revisão de quase 300 políticas e R$ 75 milhões liberados em estoque. É um caso divulgado com fornecedor participante, não uma meta para sua empresa.",
+        "title": "Comece por um grupo de itens."
+      },
+      {
+        "src": "carrosseis/estoque-cheio-produto-faltando/05.png",
+        "editable": "carrosseis/estoque-cheio-produto-faltando/05.svg",
+        "alt": "Antes de comprar mais, revise o critério.. Compare giro, saldo e reposição. Dê prioridade aos itens críticos para o atendimento.",
+        "title": "Antes de comprar mais, revise o critério."
+      }
+    ],
+    "zip": "carrosseis/estoque-cheio-produto-faltando/estoque-cheio-produto-faltando.zip"
+  },
+  {
+    "slug": "varejo-media-e-mix",
+    "title": "Varejo perto da estabilidade: o que a média esconde do seu mix",
+    "slides": [
+      {
+        "src": "carrosseis/varejo-media-e-mix/01.png",
+        "editable": "carrosseis/varejo-media-e-mix/01.svg",
+        "alt": "Uma média. Muitos caminhos.. O varejo pode parecer estável enquanto as categorias seguem direções diferentes.",
+        "title": "Uma média. Muitos caminhos."
+      },
+      {
+        "src": "carrosseis/varejo-media-e-mix/02.png",
+        "editable": "carrosseis/varejo-media-e-mix/02.svg",
+        "alt": "Varejo: +0,1% em agosto.. Variação sobre julho de 2026, com ajuste sazonal. O total nacional não descreve todos os produtos.",
+        "title": "Varejo: +0,1% em agosto."
+      },
+      {
+        "src": "carrosseis/varejo-media-e-mix/03.png",
+        "editable": "carrosseis/varejo-media-e-mix/03.svg",
+        "alt": "Os setores não seguiram a média.. Informática e escritório cresceram. Móveis e eletrodomésticos recuaram no mesmo recorte mensal.",
+        "title": "Os setores não seguiram a média."
+      },
+      {
+        "src": "carrosseis/varejo-media-e-mix/04.png",
+        "editable": "carrosseis/varejo-media-e-mix/04.svg",
+        "alt": "Seu produto precisa de uma leitura própria.. Cruze o indicador de mercado com vendas, margem e disponibilidade. Uma falta de produto também pode limitar as vendas.",
+        "title": "Seu produto precisa de uma leitura própria."
+      },
+      {
+        "src": "carrosseis/varejo-media-e-mix/05.png",
+        "editable": "carrosseis/varejo-media-e-mix/05.svg",
+        "alt": "Revise o mix com três perguntas.. A categoria corresponde ao meu setor? A variação é preço ou volume? Faltou produto para vender?",
+        "title": "Revise o mix com três perguntas."
+      }
+    ],
+    "zip": "carrosseis/varejo-media-e-mix/varejo-media-e-mix.zip"
+  },
+  {
+    "slug": "pedido-whatsapp-acompanhamento",
+    "title": "Seu pedido nasceu no WhatsApp. Quem acompanha agora?",
+    "slides": [
+      {
+        "src": "carrosseis/pedido-whatsapp-acompanhamento/01.png",
+        "editable": "carrosseis/pedido-whatsapp-acompanhamento/01.svg",
+        "alt": "O pedido saiu da conversa?. Uma confirmação em texto. Uma mudança em áudio. Qual versão chegou à expedição?",
+        "title": "O pedido saiu da conversa?"
+      },
+      {
+        "src": "carrosseis/pedido-whatsapp-acompanhamento/02.png",
+        "editable": "carrosseis/pedido-whatsapp-acompanhamento/02.svg",
+        "alt": "O canal é popular. O registro precisa ser claro.. 79% das empresas pesquisadas usavam WhatsApp ou Telegram em 2025. O indicador reúne as duas plataformas.",
+        "title": "O canal é popular. O registro precisa ser claro."
+      },
+      {
+        "src": "carrosseis/pedido-whatsapp-acompanhamento/03.png",
+        "editable": "carrosseis/pedido-whatsapp-acompanhamento/03.svg",
+        "alt": "Uma ficha curta evita adivinhação.. Identifique pedido e versão. Registre itens, quantidades, destino e condições confirmadas.",
+        "title": "Uma ficha curta evita adivinhação."
+      },
+      {
+        "src": "carrosseis/pedido-whatsapp-acompanhamento/04.png",
+        "editable": "carrosseis/pedido-whatsapp-acompanhamento/04.svg",
+        "alt": "Destaque o que ainda falta confirmar.. Pedido aceito não significa prazo validado. Registre pendência, responsável e próximo retorno.",
+        "title": "Destaque o que ainda falta confirmar."
+      },
+      {
+        "src": "carrosseis/pedido-whatsapp-acompanhamento/05.png",
+        "editable": "carrosseis/pedido-whatsapp-acompanhamento/05.svg",
+        "alt": "A passagem termina quando alguém assume.. O próximo profissional consegue continuar o atendimento sem reler toda a conversa?",
+        "title": "A passagem termina quando alguém assume."
+      }
+    ],
+    "zip": "carrosseis/pedido-whatsapp-acompanhamento/pedido-whatsapp-acompanhamento.zip"
+  },
+  {
+    "slug": "ia-pequena-empresa-primeira-tarefa",
+    "title": "IA na pequena empresa: escolha uma tarefa antes da ferramenta",
+    "slides": [
+      {
+        "src": "carrosseis/ia-pequena-empresa-primeira-tarefa/01.png",
+        "editable": "carrosseis/ia-pequena-empresa-primeira-tarefa/01.svg",
+        "alt": "Escolha a tarefa. Depois, a IA.. O primeiro teste deve resolver um trabalho que sua equipe conhece.",
+        "title": "Escolha a tarefa. Depois, a IA."
+      },
+      {
+        "src": "carrosseis/ia-pequena-empresa-primeira-tarefa/02.png",
+        "editable": "carrosseis/ia-pequena-empresa-primeira-tarefa/02.svg",
+        "alt": "15% das pequenas pesquisadas usavam IA.. TIC Empresas 2025: pequenas com 10 a 49 pessoas ocupadas. Não é um indicador de todos os MEIs.",
+        "title": "15% das pequenas pesquisadas usavam IA."
+      },
+      {
+        "src": "carrosseis/ia-pequena-empresa-primeira-tarefa/03.png",
+        "editable": "carrosseis/ia-pequena-empresa-primeira-tarefa/03.svg",
+        "alt": "Teste uma resposta que possa ser conferida.. Classificar solicitações é um exemplo. Defina a resposta esperada e quem fará a revisão.",
+        "title": "Teste uma resposta que possa ser conferida."
+      },
+      {
+        "src": "carrosseis/ia-pequena-empresa-primeira-tarefa/04.png",
+        "editable": "carrosseis/ia-pequena-empresa-primeira-tarefa/04.svg",
+        "alt": "Meça o trabalho até a correção final.. Compare tempo de execução, revisão e retrabalho. Observe também a consequência de cada erro.",
+        "title": "Meça o trabalho até a correção final."
+      },
+      {
+        "src": "carrosseis/ia-pequena-empresa-primeira-tarefa/05.png",
+        "editable": "carrosseis/ia-pequena-empresa-primeira-tarefa/05.svg",
+        "alt": "Amplie só o que a equipe controla.. Registre falhas e critérios de aprovação. Mantenha uma alternativa manual para continuar o trabalho.",
+        "title": "Amplie só o que a equipe controla."
+      }
+    ],
+    "zip": "carrosseis/ia-pequena-empresa-primeira-tarefa/ia-pequena-empresa-primeira-tarefa.zip"
+  },
+  {
+    "slug": "aumento-preco-indice-orcamento",
+    "title": "O preço mudou. Você sabe de onde veio o aumento?",
+    "slides": [
+      {
+        "src": "carrosseis/aumento-preco-indice-orcamento/01.png",
+        "editable": "carrosseis/aumento-preco-indice-orcamento/01.svg",
+        "alt": "O preço mudou. Qual conta mudou?. Total do orçamento, preço por unidade e quantidade são coisas diferentes.",
+        "title": "O preço mudou. Qual conta mudou?"
+      },
+      {
+        "src": "carrosseis/aumento-preco-indice-orcamento/02.png",
+        "editable": "carrosseis/aumento-preco-indice-orcamento/02.svg",
+        "alt": "A compra anterior: 100 unidades.. No exemplo, cada unidade custa R$ 20. O total é R$ 2.000.",
+        "title": "A compra anterior: 100 unidades."
+      },
+      {
+        "src": "carrosseis/aumento-preco-indice-orcamento/03.png",
+        "editable": "carrosseis/aumento-preco-indice-orcamento/03.svg",
+        "alt": "A nova compra: 120 unidades.. Cada unidade passa a R$ 21. O total chega a R$ 2.520. Quantidade e preço mudaram juntos.",
+        "title": "A nova compra: 120 unidades."
+      },
+      {
+        "src": "carrosseis/aumento-preco-indice-orcamento/04.png",
+        "editable": "carrosseis/aumento-preco-indice-orcamento/04.svg",
+        "alt": "Total: +26%. Unidade: +5%.. O Sinapi variou 0,30% em setembro/2026. Esse índice de construção não determina o reajuste de qualquer compra.",
+        "title": "Total: +26%. Unidade: +5%."
+      },
+      {
+        "src": "carrosseis/aumento-preco-indice-orcamento/05.png",
+        "editable": "carrosseis/aumento-preco-indice-orcamento/05.svg",
+        "alt": "Compare o mesmo produto e serviço.. Confira especificação, quantidade, preço unitário, itens incluídos, pagamento e validade da proposta.",
+        "title": "Compare o mesmo produto e serviço."
+      }
+    ],
+    "zip": "carrosseis/aumento-preco-indice-orcamento/aumento-preco-indice-orcamento.zip"
+  },
+  {
+    "slug": "dados-versao-certa",
+    "title": "Quanto tempo sua equipe perde procurando a informação certa?",
+    "slides": [
+      {
+        "src": "carrosseis/dados-versao-certa/01.png",
+        "editable": "carrosseis/dados-versao-certa/01.svg",
+        "alt": "Qual versão do pedido vale?. A planilha da manhã ou a mensagem recebida à tarde?",
+        "title": "Qual versão do pedido vale?"
+      },
+      {
+        "src": "carrosseis/dados-versao-certa/02.png",
+        "editable": "carrosseis/dados-versao-certa/02.svg",
+        "alt": "Nuvem não organiza um dado sozinha.. 36% das empresas pesquisadas pagavam por capacidade de processamento em nuvem em 2025. Isso não mede a qualidade dos registros.",
+        "title": "Nuvem não organiza um dado sozinha."
+      },
+      {
+        "src": "carrosseis/dados-versao-certa/03.png",
+        "editable": "carrosseis/dados-versao-certa/03.svg",
+        "alt": "Escolha uma fonte válida.. Defina onde fica o registro aceito e como uma alteração chega a quem precisa agir.",
+        "title": "Escolha uma fonte válida."
+      },
+      {
+        "src": "carrosseis/dados-versao-certa/04.png",
+        "editable": "carrosseis/dados-versao-certa/04.svg",
+        "alt": "O campo significa a mesma coisa para todos?. “Data de entrega” pode ser solicitação, estimativa ou confirmação. Separe os sentidos antes de integrar.",
+        "title": "O campo significa a mesma coisa para todos?"
+      },
+      {
+        "src": "carrosseis/dados-versao-certa/05.png",
+        "editable": "carrosseis/dados-versao-certa/05.svg",
+        "alt": "Dê nome ao responsável.. Quem valida? Quem atualiza? Quem resolve o conflito entre versões? Meça a busca e o retrabalho no próprio fluxo.",
+        "title": "Dê nome ao responsável."
+      }
+    ],
+    "zip": "carrosseis/dados-versao-certa/dados-versao-certa.zip"
+  },
+  {
+    "slug": "reposicao-pecas-vendas-oscilam",
+    "title": "Reposição de peças: o que olhar quando as vendas oscilam?",
+    "slides": [
+      {
+        "src": "carrosseis/reposicao-pecas-vendas-oscilam/01.png",
+        "editable": "carrosseis/reposicao-pecas-vendas-oscilam/01.svg",
+        "alt": "Peça de baixo giro. Problema de alto impacto.. O item pode vender pouco e ainda ser crítico para o cliente.",
+        "title": "Peça de baixo giro. Problema de alto impacto."
+      },
+      {
+        "src": "carrosseis/reposicao-pecas-vendas-oscilam/02.png",
+        "editable": "carrosseis/reposicao-pecas-vendas-oscilam/02.svg",
+        "alt": "O dado agregado não é a sua peça.. O grupo veículos, motos, partes e peças caiu 1,0% em agosto/julho de 2026, com ajuste sazonal. Inclui veículos: não é autopeças isoladas.",
+        "title": "O dado agregado não é a sua peça."
+      },
+      {
+        "src": "carrosseis/reposicao-pecas-vendas-oscilam/03.png",
+        "editable": "carrosseis/reposicao-pecas-vendas-oscilam/03.svg",
+        "alt": "Cruze giro e criticidade.. Pergunte qual é a consequência de faltar. Compare isso à frequência de saída e ao prazo real de reposição.",
+        "title": "Cruze giro e criticidade."
+      },
+      {
+        "src": "carrosseis/reposicao-pecas-vendas-oscilam/04.png",
+        "editable": "carrosseis/reposicao-pecas-vendas-oscilam/04.svg",
+        "alt": "Mesmo giro. Riscos diferentes.. Uma peça chega no dia seguinte. Outra leva semanas e não tem substituto aprovado. A mesma regra pode ignorar essa diferença.",
+        "title": "Mesmo giro. Riscos diferentes."
+      },
+      {
+        "src": "carrosseis/reposicao-pecas-vendas-oscilam/05.png",
+        "editable": "carrosseis/reposicao-pecas-vendas-oscilam/05.svg",
+        "alt": "Revise o item, não só a média.. Há alternativa aprovada? O prazo real é igual ao cadastrado? A compra atende demanda ou receio de faltar?",
+        "title": "Revise o item, não só a média."
+      }
+    ],
+    "zip": "carrosseis/reposicao-pecas-vendas-oscilam/reposicao-pecas-vendas-oscilam.zip"
+  },
+  {
+    "slug": "embalagem-etiqueta-legivel",
+    "title": "Embalagem e etiqueta: o que precisa continuar legível até a entrega?",
+    "slides": [
+      {
+        "src": "carrosseis/embalagem-etiqueta-legivel/01.png",
+        "editable": "carrosseis/embalagem-etiqueta-legivel/01.svg",
+        "alt": "A caixa está pronta. A etiqueta também?. Proteção e identificação precisam funcionar juntas até a entrega.",
+        "title": "A caixa está pronta. A etiqueta também?"
+      },
+      {
+        "src": "carrosseis/embalagem-etiqueta-legivel/02.png",
+        "editable": "carrosseis/embalagem-etiqueta-legivel/02.svg",
+        "alt": "Os dados precisam continuar legíveis.. Confira origem, destino e identificação do pedido. Não dependa da memória de quem preparou a remessa.",
+        "title": "Os dados precisam continuar legíveis."
+      },
+      {
+        "src": "carrosseis/embalagem-etiqueta-legivel/03.png",
+        "editable": "carrosseis/embalagem-etiqueta-legivel/03.svg",
+        "alt": "Evite duas histórias na mesma caixa.. Uma etiqueta antiga pode entrar em conflito com a identificação válida. Confira antes do fechamento final.",
+        "title": "Evite duas histórias na mesma caixa."
+      },
+      {
+        "src": "carrosseis/embalagem-etiqueta-legivel/04.png",
+        "editable": "carrosseis/embalagem-etiqueta-legivel/04.svg",
+        "alt": "Uma função não substitui a outra.. Etiqueta identifica. Embalagem protege. Documentação acompanha o enquadramento do embarque.",
+        "title": "Uma função não substitui a outra."
+      },
+      {
+        "src": "carrosseis/embalagem-etiqueta-legivel/05.png",
+        "editable": "carrosseis/embalagem-etiqueta-legivel/05.svg",
+        "alt": "Peça outra pessoa para conferir.. Ela consegue reconhecer destino, pedido e volumes sem explicação verbal? Se não, revise a identificação.",
+        "title": "Peça outra pessoa para conferir."
+      }
+    ],
+    "zip": "carrosseis/embalagem-etiqueta-legivel/embalagem-etiqueta-legivel.zip"
+  },
+  {
+    "slug": "reposicao-validade-saude",
+    "title": "Vender mais exige rever a reposição? Nem sempre do mesmo jeito",
+    "slides": [
+      {
+        "src": "carrosseis/reposicao-validade-saude/01.png",
+        "editable": "carrosseis/reposicao-validade-saude/01.svg",
+        "alt": "Disponível é mais que quantidade.. Em produtos com validade ou conservação específica, o saldo é só parte da decisão.",
+        "title": "Disponível é mais que quantidade."
+      },
+      {
+        "src": "carrosseis/reposicao-validade-saude/02.png",
+        "editable": "carrosseis/reposicao-validade-saude/02.svg",
+        "alt": "Uma categoria. Produtos diferentes.. O grupo farmacêuticos, médicos, ortopédicos e perfumaria avançou 0,7% em agosto/julho de 2026, com ajuste sazonal.",
+        "title": "Uma categoria. Produtos diferentes."
+      },
+      {
+        "src": "carrosseis/reposicao-validade-saude/03.png",
+        "editable": "carrosseis/reposicao-validade-saude/03.svg",
+        "alt": "Enxergue o lote além do total.. Confira saldo liberado, pedidos assumidos e validade. Quantidades bloqueadas precisam aparecer separadas.",
+        "title": "Enxergue o lote além do total."
+      },
+      {
+        "src": "carrosseis/reposicao-validade-saude/04.png",
+        "editable": "carrosseis/reposicao-validade-saude/04.svg",
+        "alt": "Medicamentos exigem avaliação própria.. A Anvisa tem orientações específicas de distribuição, armazenagem e transporte. Elas não se aplicam automaticamente a todo produto de saúde.",
+        "title": "Medicamentos exigem avaliação própria."
+      },
+      {
+        "src": "carrosseis/reposicao-validade-saude/05.png",
+        "editable": "carrosseis/reposicao-validade-saude/05.svg",
+        "alt": "Valide antes de comprar e transportar.. Confirme requisitos do produto com a equipe responsável. O roteiro não confirma habilitação ou aceitação pela Bomfim.",
+        "title": "Valide antes de comprar e transportar."
+      }
+    ],
+    "zip": "carrosseis/reposicao-validade-saude/reposicao-validade-saude.zip"
+  },
+  {
+    "slug": "status-antes-da-automacao",
+    "title": "Antes de automatizar o estoque, combine o que cada status significa",
+    "slides": [
+      {
+        "src": "carrosseis/status-antes-da-automacao/01.png",
+        "editable": "carrosseis/status-antes-da-automacao/01.svg",
+        "alt": "“Recebido” significa o quê?. A portaria, a operação e o comercial entendem o mesmo evento?",
+        "title": "“Recebido” significa o quê?"
+      },
+      {
+        "src": "carrosseis/status-antes-da-automacao/02.png",
+        "editable": "carrosseis/status-antes-da-automacao/02.svg",
+        "alt": "Tecnologia precisa de eventos bem definidos.. 14% das empresas pesquisadas usavam dispositivos inteligentes ou IoT em 2025. O dado não mede maturidade do estoque.",
+        "title": "Tecnologia precisa de eventos bem definidos."
+      },
+      {
+        "src": "carrosseis/status-antes-da-automacao/03.png",
+        "editable": "carrosseis/status-antes-da-automacao/03.svg",
+        "alt": "Chegou? Foi conferido?. A chegada física e a conclusão da conferência são eventos diferentes. Defina a evidência necessária para cada um.",
+        "title": "Chegou? Foi conferido?"
+      },
+      {
+        "src": "carrosseis/status-antes-da-automacao/04.png",
+        "editable": "carrosseis/status-antes-da-automacao/04.svg",
+        "alt": "Está disponível ou reservado?. A disponibilidade depende das regras de liberação. A reserva vincula uma quantidade a um pedido identificado.",
+        "title": "Está disponível ou reservado?"
+      },
+      {
+        "src": "carrosseis/status-antes-da-automacao/05.png",
+        "editable": "carrosseis/status-antes-da-automacao/05.svg",
+        "alt": "Teste o significado com uma exceção.. Quem confirma o evento? O que muda na próxima etapa? Como corrigir um registro e manter seu histórico?",
+        "title": "Teste o significado com uma exceção."
+      }
+    ],
+    "zip": "carrosseis/status-antes-da-automacao/status-antes-da-automacao.zip"
+  }
+]

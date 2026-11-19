@@ -1,0 +1,21 @@
+.commercial-fields { display: grid; gap: 24px; min-width: 0; }
+.commercial-fields__locations { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.commercial-location, .commercial-options { min-width: 0; margin: 0; padding: 0; border: 0; }
+.commercial-location legend, .commercial-options legend { margin-bottom: 12px; color: var(--ink); font-size: 14px; font-weight: 700; }
+.commercial-location legend svg { display: inline-block; margin-right: 6px; vertical-align: middle; color: var(--brand); }
+.commercial-location__status { min-height: 54px; padding-block: 8px; font-size: 12px; line-height: 1.5; color: var(--muted); overflow-wrap: anywhere; }
+.commercial-location__retry { margin-bottom: 12px; min-height: 44px; text-align: left; color: var(--brand); text-decoration: underline; font-size: 12px; }
+.commercial-options__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.commercial-options__item { position: relative; min-width: 0; cursor: pointer; }
+.commercial-options__item input { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); width: 16px; height: 16px; margin: 0; accent-color: var(--brand); }
+.commercial-options__item > span { display: flex; align-items: center; gap: 8px; padding: 12px 12px 12px 36px; min-height: 60px; height: 100%; border-radius: 8px; background: var(--canvas); color: var(--ink); font-size: 12px; line-height: 1.4; transition: background-color .15s; }
+.commercial-options__item svg { flex: none; color: var(--subtle); }
+.commercial-options__item:has(input:checked) > span { background: #fff0f3; color: var(--brand); font-weight: 700; }
+.commercial-options__item:has(input:checked) svg { color: var(--brand); }
+.commercial-options__item:has(input:focus-visible) > span { outline: 2px solid var(--ink); outline-offset: 2px; }
+@media (hover: hover) { .commercial-options__item:hover > span { background: var(--soft); } .commercial-options__item:has(input:checked):hover > span { background: #fff0f3; } }
+@media (max-width: 480px) {
+  .commercial-fields__locations { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .commercial-location__status { min-height: 0; }
+  .commercial-options__item > span { flex-direction: column; align-items: flex-start; gap: 6px; font-size: 13px; }
+}

@@ -1,0 +1,89 @@
+[
+  {
+    "id": "pmc",
+    "url": "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/48292-em-agosto-comercio-varejista-registra-variacao-0-1",
+    "status": 403
+  },
+  {
+    "id": "sinapi",
+    "url": "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/48251-indice-nacional-da-construcao-civil-apresenta-variacao-de-0-30-em-setembro",
+    "status": 403
+  },
+  {
+    "id": "tic",
+    "url": "https://cetic.br/pt/noticia/uso-de-inteligencia-artificial-por-empresas-brasileiras-avanca-e-atinge-17-aponta-pesquisa-do-cetic-br/",
+    "status": 200,
+    "type": "text/html",
+    "sampleBytes": 200
+  },
+  {
+    "id": "csn",
+    "url": "https://www.tecnologistica.com.br/noticias/negocios/21996/csn-reduz-r-75-milhoes-em-estoques-apos-revisao-de-politicas-de-suprimentos/",
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "sampleBytes": 200
+  },
+  {
+    "id": "piso",
+    "url": "https://www.gov.br/antt/pt-br/assuntos/cargas/politica-nacional-de-pisos-minimos-de-frete/perguntas-frequentes-pmf",
+    "status": 200,
+    "type": "text/html;charset=utf-8",
+    "sampleBytes": 200
+  },
+  {
+    "id": "vpo",
+    "url": "https://www.gov.br/antt/pt-br/assuntos/cargas/vale-pedagio-obrigatorio",
+    "status": 200,
+    "type": "text/html;charset=utf-8",
+    "sampleBytes": 200
+  },
+  {
+    "id": "tag",
+    "url": "https://www.gov.br/antt/pt-br/assuntos/ultimas-noticias/antt-moderniza-pagamento-do-vale-pedagio-obrigatorio",
+    "status": 200,
+    "type": "text/html;charset=utf-8",
+    "sampleBytes": 200
+  },
+  {
+    "id": "ntc",
+    "url": "https://www.portalntc.org.br/frete-valor-nao-e-seguro/",
+    "status": 200,
+    "type": "text/html; charset=UTF-8",
+    "sampleBytes": 200
+  },
+  {
+    "id": "susep",
+    "url": "https://www.gov.br/susep/pt-br/central-de-conteudos/noticias/2024/setembro/publicada-nova-norma-sobre-seguros-de-responsabilidade-civil-dos-transportadores-de-carga",
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "sampleBytes": 200
+  },
+  {
+    "id": "correios",
+    "url": "https://www.correios.com.br/enviar/encomendas/arquivo/nacional/guia-de-enderecamento.pdf",
+    "status": 200,
+    "type": "application/pdf",
+    "sampleBytes": 200
+  },
+  {
+    "id": "anvisa",
+    "url": "https://www.gov.br/anvisa/pt-br/centraisdeconteudo/publicacoes/certificacao-e-fiscalizacao/perguntas-e-respostas/perguntas-e-respostas-rdc-430-de-2020.pdf",
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "sampleBytes": 200
+  },
+  {
+    "id": "review-json",
+    "url": "https://www.4lia.com.br/site-bomfim/revisao-editorial/conteudos.json",
+    "status": 200,
+    "type": "application/json",
+    "sampleBytes": 200
+  },
+  {
+    "id": "review-markdown",
+    "url": "https://www.4lia.com.br/site-bomfim/revisao-editorial/conteudos.md",
+    "status": 200,
+    "type": null,
+    "sampleBytes": 200
+  }
+]

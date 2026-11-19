@@ -1,0 +1,23 @@
+# Reinicia só bomfim-site-api em DEPLOY_PATH (/opt/site-bomfim). Não afeta /opt/bomfim.
+name: Reiniciar API (ler .env)
+
+# Use após alterar o .env manualmente no servidor, sem novo deploy de código.
+on:
+  workflow_dispatch:
+
+jobs:
+  restart-api:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Reiniciar serviço no servidor
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.SSH_PORT || 22 }}
+          script: |
+            set -e
+            cd "${{ secrets.DEPLOY_PATH }}"
+            chmod +x scripts/server/restart-services.sh 2>/dev/null || true
+            bash scripts/server/restart-services.sh

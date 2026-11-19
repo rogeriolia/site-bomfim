@@ -1,0 +1,339 @@
+{
+  "/": {
+    "title": "Carga fracionada e distribuição para empresas no Nordeste",
+    "heading": "Conectamos sua carga ao Nordeste",
+    "description": "Carga fracionada para abastecer clientes, repor mercadorias e transferir estoques entre cidades. Conheça as soluções Bomfim para sua empresa no Nordeste.",
+    "image": "/assets/visuals-2026/05-hero-corredores.webp",
+    "area": "institutional",
+    "indexable": true
+  },
+  "/inicio-recorrente": {
+    "title": "Atendimento e serviços para sua operação",
+    "heading": "Sua operação continua por aqui.",
+    "description": "Acesse os canais de atendimento Bomfim, organize coletas e encontre o caminho para rastrear cargas no portal oficial.",
+    "image": "/assets/visuals-2026/16-hero-home-recorrente.webp",
+    "area": "institutional",
+    "indexable": true
+  },
+  "/solucoes": {
+    "title": "Transporte de cargas no Nordeste",
+    "heading": "Transporte para a rotina da sua empresa no Nordeste.",
+    "description": "Conheça a carga fracionada Bomfim e as opções para organizar coletas, envios recorrentes e distribuição de mercadorias no Nordeste.",
+    "image": "/assets/visuals-2026/07-carregamento.webp",
+    "area": "institutional",
+    "indexable": true
+  },
+  "/rotas": {
+    "title": "Rotas e distribuição entre cidades",
+    "heading": "Distribuição entre cidades. Estoque onde precisa estar.",
+    "description": "Selecione origens e destinos no Nordeste para planejar a distribuição aos clientes e as transferências de estoque entre lojas, filiais e centros de distribuição.",
+    "image": "/assets/routes-hero-bomfim-v2.webp",
+    "area": "institutional",
+    "indexable": true
+  },
+  "/estrutura": {
+    "title": "Estrutura e unidades no Nordeste",
+    "heading": "Pessoas e estrutura por trás de cada embarque.",
+    "description": "Conheça a estrutura Bomfim: unidades, equipes e processos que apoiam a conferência, a movimentação e o acompanhamento das cargas no Nordeste.",
+    "image": "/assets/visuals-2026/02-hero-estrutura.webp",
+    "area": "institutional",
+    "indexable": true
+  },
+  "/quem-somos": {
+    "title": "Sobre a Bomfim Cargas",
+    "heading": "Desde 1991, no caminho de quem movimenta o Nordeste.",
+    "description": "Conheça a história da Bomfim Cargas e sua atuação no transporte e na distribuição de mercadorias entre empresas e cidades do Nordeste.",
+    "image": "/assets/visuals-2026/15-equipe.webp",
+    "area": "institutional",
+    "indexable": true
+  },
+  "/unidades": {
+    "title": "Endereços e contatos das unidades",
+    "heading": "Unidades Bomfim no Nordeste.",
+    "description": "Encontre endereços e telefones das unidades Bomfim Cargas no Nordeste e fale com a equipe responsável pelo atendimento da sua região.",
+    "image": "/assets/visuals-2026/11-armazenagem.webp",
+    "area": "institutional",
+    "indexable": true
+  },
+  "/conteudos": {
+    "title": "Conteúdos sobre mercado, gestão e logística",
+    "heading": "Informação para o dia a dia da sua empresa.",
+    "description": "Leituras sobre mercado, estoque, produtividade e logística, com dados, fontes e orientações para decisões do dia a dia da sua empresa.",
+    "image": "/assets/visuals-2026/12-triagem.webp",
+    "area": "content",
+    "indexable": true
+  },
+  "/contato": {
+    "title": "Contato com o comercial",
+    "heading": "Vamos planejar a operação da sua empresa.",
+    "description": "Converse com o comercial Bomfim sobre cidades atendidas, frequência de embarques e necessidades de distribuição da sua empresa.",
+    "image": "/assets/visuals-2026/04-hero-atendimento.webp",
+    "area": "conversion",
+    "indexable": true
+  },
+  "/comercial": {
+    "title": "Falar com o comercial Bomfim",
+    "heading": "Vamos planejar a operação da sua empresa.",
+    "description": "Converse com o time comercial Bomfim sobre cidades atendidas, frequência de embarques e necessidades de distribuição.",
+    "image": "/assets/visuals-2026/04-hero-atendimento.webp",
+    "area": "conversion",
+    "indexable": true
+  },
+  "/cotacao": {
+    "title": "Solicitar cotação de transporte",
+    "heading": "Sua próxima cotação começa por aqui.",
+    "description": "Informe origem, destino, volumes e perfil da carga para preparar uma solicitação de cotação de transporte com a Bomfim.",
+    "image": "/assets/visuals-2026/08-motorista.webp",
+    "area": "conversion",
+    "indexable": true
+  },
+  "/coleta": {
+    "title": "Solicitar coleta de carga",
+    "heading": "Prepare o próximo embarque da sua empresa.",
+    "description": "Reúna os locais de coleta e entrega e as características da carga para solicitar a avaliação de uma coleta com a Bomfim.",
+    "image": "/assets/visuals-2026/03-hero-coleta.webp",
+    "area": "conversion",
+    "indexable": true
+  },
+  "/area-do-cliente": {
+    "title": "Portal e rastreamento de cargas",
+    "heading": "Acesso e rastreio no lugar certo.",
+    "description": "Encontre o acesso ao portal oficial Bomfim para rastreamento e serviços de atendimento. As consultas acontecem em um software separado deste site.",
+    "image": "/assets/visuals-2026/10-atendimento.webp",
+    "area": "utility",
+    "indexable": false
+  },
+  "/avisos": {
+    "title": "Avisos sobre entregas, unidades e rotas",
+    "heading": "Informações que podem afetar sua entrega.",
+    "description": "Consulte a central de avisos Bomfim sobre clima, unidades e rotas. Nesta versão de revisão, as ocorrências são demonstrativas.",
+    "image": "/assets/visuals-2026/09-frota-leve.webp",
+    "area": "utility",
+    "indexable": false
+  },
+  "/privacidade": {
+    "title": "Privacidade e uso de dados",
+    "heading": "Política de Privacidade",
+    "description": "Entenda o uso dos dados de contato, o armazenamento neste navegador e as preferências de privacidade disponíveis no site Bomfim.",
+    "image": "/assets/visuals-2026/13-qualidade.webp",
+    "area": "utility",
+    "indexable": false
+  },
+  "/canal-de-denuncias": {
+    "title": "Canal de denúncias",
+    "heading": "Relate uma situação com segurança.",
+    "description": "Conheça o canal destinado a relatos de conduta. O formulário desta versão é demonstrativo e não transmite denúncias.",
+    "image": "/assets/visuals-2026/01-hero-pessoas.webp",
+    "area": "utility",
+    "indexable": false
+  },
+  "/design-system": {
+    "title": "Guia visual do site",
+    "heading": "Um sistema para site, conteúdo e campanhas.",
+    "description": "Referência interna de cores, tipografia, componentes e padrões de interface do novo site Bomfim.",
+    "image": "/assets/visuals-2026/06-conferencia.webp",
+    "area": "utility",
+    "indexable": false
+  },
+  "/biblioteca-visual": {
+    "title": "Acervo visual do projeto",
+    "heading": "Acervo visual para o site Bomfim",
+    "description": "Acervo de imagens do projeto, organizado por assunto e aplicação para orientar a revisão editorial e a implementação do CMS.",
+    "image": "/assets/visuals-2026/11-armazenagem.webp",
+    "area": "utility",
+    "indexable": false
+  },
+  "/campanhas/descoberta": {
+    "title": "Distribuição para empresas no Nordeste",
+    "heading": "Sua próxima rota começa aqui.",
+    "description": "Conte quais cidades sua empresa precisa conectar.",
+    "image": "/assets/visuals-2026/14-distribuicao-urbana.webp",
+    "area": "landing",
+    "indexable": false
+  },
+  "/campanhas/consideracao": {
+    "title": "Planejamento de rotas e embarques",
+    "heading": "Entenda o que suas rotas precisam.",
+    "description": "Organize destinos e frequência para uma conversa mais útil.",
+    "image": "/assets/visuals-2026/06-conferencia.webp",
+    "area": "landing",
+    "indexable": false
+  },
+  "/campanhas/decisao": {
+    "title": "Converse sobre sua operação de transporte",
+    "heading": "Vamos falar da sua operação.",
+    "description": "Deixe seus dados e a equipe ajuda a avaliar o próximo passo.",
+    "image": "/assets/visuals-2026/01-hero-pessoas.webp",
+    "area": "landing",
+    "indexable": false
+  },
+  "/campanhas/retorno": {
+    "title": "Retome seu planejamento de distribuição",
+    "heading": "Vamos retomar suas rotas?",
+    "description": "Compartilhe seu contato e o ponto em que sua análise parou.",
+    "image": "/assets/visuals-2026/17-banner-cobertura.webp",
+    "area": "landing",
+    "indexable": false
+  },
+  "/obrigado/contato": {
+    "title": "Obrigado por conversar com a Bomfim — demonstração",
+    "heading": "Obrigado por conversar com a Bomfim.",
+    "description": "Você deu o primeiro passo para planejar seus próximos embarques. Esta etapa é demonstrativa, sem envio de dados.",
+    "image": "/assets/visuals-2026/04-hero-atendimento.webp",
+    "area": "utility",
+    "indexable": false
+  },
+  "/obrigado/cotacao": {
+    "title": "Mais um passo para sua carga seguir viagem — demonstração",
+    "heading": "Mais um passo para sua carga seguir viagem.",
+    "description": "Obrigado por preparar os dados da sua cotação. Esta etapa é demonstrativa, sem envio de dados.",
+    "image": "/assets/visuals-2026/08-motorista.webp",
+    "area": "utility",
+    "indexable": false
+  },
+  "/obrigado/coleta": {
+    "title": "Seu próximo embarque começa aqui — demonstração",
+    "heading": "Seu próximo embarque começa aqui.",
+    "description": "Obrigado por organizar as informações da coleta. Esta etapa é demonstrativa, sem envio de dados.",
+    "image": "/assets/visuals-2026/03-hero-coleta.webp",
+    "area": "utility",
+    "indexable": false
+  },
+  "/obrigado/conteudos": {
+    "title": "Que bom ter você por perto — demonstração",
+    "heading": "Que bom ter você por perto.",
+    "description": "Mercado, gestão e logística fazem parte dessa conversa. Esta etapa é demonstrativa, sem envio de dados.",
+    "image": "/assets/visuals-2026/12-triagem.webp",
+    "area": "utility",
+    "indexable": false
+  },
+  "/obrigado/denuncia": {
+    "title": "Etapa de revisão concluída — demonstração",
+    "heading": "Etapa de revisão concluída.",
+    "description": "Demonstração: nenhum relato foi transmitido. Esta etapa é demonstrativa, sem envio de dados.",
+    "image": "/assets/visuals-2026/13-qualidade.webp",
+    "area": "utility",
+    "indexable": false
+  },
+  "/aviso-de-entrega": {
+    "title": "Avisos sobre entregas, unidades e rotas",
+    "heading": "Informações que podem afetar sua entrega.",
+    "description": "Consulte a central de avisos Bomfim sobre clima, unidades e rotas. Nesta versão de revisão, as ocorrências são demonstrativas.",
+    "image": "/assets/visuals-2026/09-frota-leve.webp",
+    "area": "utility",
+    "indexable": false,
+    "canonicalPath": "/avisos"
+  },
+  "/obrigado/rotas": {
+    "title": "Boas rotas começam com um bom planejamento — demonstração",
+    "heading": "Boas rotas começam com um bom planejamento.",
+    "description": "Obrigado por reunir seus destinos e preparar seu contato. Esta etapa é demonstrativa, sem envio de dados.",
+    "image": "/assets/visuals-2026/04-hero-atendimento.webp",
+    "area": "utility",
+    "indexable": false
+  },
+  "/campanhas/descoberta/obrigado/contato": {
+    "title": "Obrigado por conversar com a Bomfim — demonstração — descoberta",
+    "heading": "Obrigado por conversar com a Bomfim.",
+    "description": "Você deu o primeiro passo para planejar seus próximos embarques. Esta etapa é demonstrativa, sem envio de dados.",
+    "image": "/assets/visuals-2026/04-hero-atendimento.webp",
+    "area": "landing",
+    "indexable": false
+  },
+  "/campanhas/descoberta/obrigado/cotacao": {
+    "title": "Mais um passo para sua carga seguir viagem — demonstração — descoberta",
+    "heading": "Mais um passo para sua carga seguir viagem.",
+    "description": "Obrigado por preparar os dados da sua cotação. Esta etapa é demonstrativa, sem envio de dados.",
+    "image": "/assets/visuals-2026/08-motorista.webp",
+    "area": "landing",
+    "indexable": false
+  },
+  "/campanhas/descoberta/obrigado/coleta": {
+    "title": "Seu próximo embarque começa aqui — demonstração — descoberta",
+    "heading": "Seu próximo embarque começa aqui.",
+    "description": "Obrigado por organizar as informações da coleta. Esta etapa é demonstrativa, sem envio de dados.",
+    "image": "/assets/visuals-2026/03-hero-coleta.webp",
+    "area": "landing",
+    "indexable": false
+  },
+  "/campanhas/consideracao/obrigado/contato": {
+    "title": "Obrigado por conversar com a Bomfim — demonstração — consideracao",
+    "heading": "Obrigado por conversar com a Bomfim.",
+    "description": "Você deu o primeiro passo para planejar seus próximos embarques. Esta etapa é demonstrativa, sem envio de dados.",
+    "image": "/assets/visuals-2026/04-hero-atendimento.webp",
+    "area": "landing",
+    "indexable": false
+  },
+  "/campanhas/consideracao/obrigado/cotacao": {
+    "title": "Mais um passo para sua carga seguir viagem — demonstração — consideracao",
+    "heading": "Mais um passo para sua carga seguir viagem.",
+    "description": "Obrigado por preparar os dados da sua cotação. Esta etapa é demonstrativa, sem envio de dados.",
+    "image": "/assets/visuals-2026/08-motorista.webp",
+    "area": "landing",
+    "indexable": false
+  },
+  "/campanhas/consideracao/obrigado/coleta": {
+    "title": "Seu próximo embarque começa aqui — demonstração — consideracao",
+    "heading": "Seu próximo embarque começa aqui.",
+    "description": "Obrigado por organizar as informações da coleta. Esta etapa é demonstrativa, sem envio de dados.",
+    "image": "/assets/visuals-2026/03-hero-coleta.webp",
+    "area": "landing",
+    "indexable": false
+  },
+  "/campanhas/decisao/obrigado/contato": {
+    "title": "Obrigado por conversar com a Bomfim — demonstração — decisao",
+    "heading": "Obrigado por conversar com a Bomfim.",
+    "description": "Você deu o primeiro passo para planejar seus próximos embarques. Esta etapa é demonstrativa, sem envio de dados.",
+    "image": "/assets/visuals-2026/04-hero-atendimento.webp",
+    "area": "landing",
+    "indexable": false
+  },
+  "/campanhas/decisao/obrigado/cotacao": {
+    "title": "Mais um passo para sua carga seguir viagem — demonstração — decisao",
+    "heading": "Mais um passo para sua carga seguir viagem.",
+    "description": "Obrigado por preparar os dados da sua cotação. Esta etapa é demonstrativa, sem envio de dados.",
+    "image": "/assets/visuals-2026/08-motorista.webp",
+    "area": "landing",
+    "indexable": false
+  },
+  "/campanhas/decisao/obrigado/coleta": {
+    "title": "Seu próximo embarque começa aqui — demonstração — decisao",
+    "heading": "Seu próximo embarque começa aqui.",
+    "description": "Obrigado por organizar as informações da coleta. Esta etapa é demonstrativa, sem envio de dados.",
+    "image": "/assets/visuals-2026/03-hero-coleta.webp",
+    "area": "landing",
+    "indexable": false
+  },
+  "/campanhas/retorno/obrigado/contato": {
+    "title": "Obrigado por conversar com a Bomfim — demonstração — retorno",
+    "heading": "Obrigado por conversar com a Bomfim.",
+    "description": "Você deu o primeiro passo para planejar seus próximos embarques. Esta etapa é demonstrativa, sem envio de dados.",
+    "image": "/assets/visuals-2026/04-hero-atendimento.webp",
+    "area": "landing",
+    "indexable": false
+  },
+  "/campanhas/retorno/obrigado/cotacao": {
+    "title": "Mais um passo para sua carga seguir viagem — demonstração — retorno",
+    "heading": "Mais um passo para sua carga seguir viagem.",
+    "description": "Obrigado por preparar os dados da sua cotação. Esta etapa é demonstrativa, sem envio de dados.",
+    "image": "/assets/visuals-2026/08-motorista.webp",
+    "area": "landing",
+    "indexable": false
+  },
+  "/campanhas/retorno/obrigado/coleta": {
+    "title": "Seu próximo embarque começa aqui — demonstração — retorno",
+    "heading": "Seu próximo embarque começa aqui.",
+    "description": "Obrigado por organizar as informações da coleta. Esta etapa é demonstrativa, sem envio de dados.",
+    "image": "/assets/visuals-2026/03-hero-coleta.webp",
+    "area": "landing",
+    "indexable": false
+  },
+  "/tecnologia": {
+    "title": "Tecnologia e acompanhamento de cargas",
+    "heading": "Informação para acompanhar sua carga e orientar o próximo passo.",
+    "description": "Saiba como a Bomfim usa sistemas e registros para apoiar a conferência e o acompanhamento do transporte. Acesse o portal oficial do cliente.",
+    "image": "/assets/visuals-2026/16-hero-home-recorrente.webp",
+    "area": "institutional",
+    "indexable": true
+  }
+}

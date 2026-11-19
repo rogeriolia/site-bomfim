@@ -1,0 +1,457 @@
+{
+  "images": [
+    {
+      "file": "carrosseis/estoque-cheio-produto-faltando/01.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/estoque-cheio-produto-faltando/02.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/estoque-cheio-produto-faltando/03.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/estoque-cheio-produto-faltando/04.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/estoque-cheio-produto-faltando/05.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/varejo-media-e-mix/01.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/varejo-media-e-mix/02.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/varejo-media-e-mix/03.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/varejo-media-e-mix/04.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/varejo-media-e-mix/05.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/pedido-whatsapp-acompanhamento/01.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/pedido-whatsapp-acompanhamento/02.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/pedido-whatsapp-acompanhamento/03.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/pedido-whatsapp-acompanhamento/04.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/pedido-whatsapp-acompanhamento/05.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/ia-pequena-empresa-primeira-tarefa/01.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/ia-pequena-empresa-primeira-tarefa/02.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/ia-pequena-empresa-primeira-tarefa/03.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/ia-pequena-empresa-primeira-tarefa/04.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/ia-pequena-empresa-primeira-tarefa/05.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/aumento-preco-indice-orcamento/01.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/aumento-preco-indice-orcamento/02.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/aumento-preco-indice-orcamento/03.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/aumento-preco-indice-orcamento/04.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/aumento-preco-indice-orcamento/05.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/dados-versao-certa/01.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/dados-versao-certa/02.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/dados-versao-certa/03.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/dados-versao-certa/04.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/dados-versao-certa/05.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/reposicao-pecas-vendas-oscilam/01.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/reposicao-pecas-vendas-oscilam/02.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/reposicao-pecas-vendas-oscilam/03.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/reposicao-pecas-vendas-oscilam/04.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/reposicao-pecas-vendas-oscilam/05.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/embalagem-etiqueta-legivel/01.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/embalagem-etiqueta-legivel/02.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/embalagem-etiqueta-legivel/03.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/embalagem-etiqueta-legivel/04.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/embalagem-etiqueta-legivel/05.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/reposicao-validade-saude/01.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/reposicao-validade-saude/02.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/reposicao-validade-saude/03.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/reposicao-validade-saude/04.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/reposicao-validade-saude/05.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/status-antes-da-automacao/01.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/status-antes-da-automacao/02.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/status-antes-da-automacao/03.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/status-antes-da-automacao/04.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    },
+    {
+      "file": "carrosseis/status-antes-da-automacao/05.png",
+      "status": 200,
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "ok": true
+    }
+  ],
+  "completeZipValid": true,
+  "pngsInZip": 50,
+  "bytes": 4344548
+}

@@ -1,0 +1,38 @@
+/* Wider composition; paragraphs retain a comfortable reading measure. */
+.institutional-reading .container-site,.service-detail .container-site,.article-detail.container-site{width:min(calc(100% - 48px),var(--container));margin-inline:auto}
+.institutional-reading__hero-copy{max-width:1040px}
+.institutional-reading__hero-copy h1{max-width:100%;font-size:clamp(34px,4vw,60px);text-wrap:balance}
+.institutional-reading__layout{display:grid;grid-template-columns:240px minmax(0,1fr);gap:clamp(40px,6vw,80px);align-items:start}
+.institutional-reading__index{position:sticky;top:32px;display:grid;gap:12px;font-size:14px;line-height:1.5}.institutional-reading__index>strong{margin-bottom:8px;color:var(--ink)}.institutional-reading__index>a{color:var(--subtle);padding-block:6px}.institutional-reading__index>a:hover{color:var(--brand)}
+.institutional-reading__sections{display:grid;gap:48px;min-width:0}
+.institutional-reading__sections>section{display:block;scroll-margin-top:32px}
+.institutional-reading__sections h2{max-width:100%;margin-bottom:20px;font-size:clamp(26px,2.3vw,34px);line-height:1.25;text-wrap:pretty}
+.institutional-reading__sections p{margin-top:0;max-width:75ch;font-size:17px;line-height:1.8;color:var(--ink)}
+.institutional-reading__sections p+p{margin-top:20px}
+.service-detail__hero-copy{width:min(100%,1040px);max-width:1040px}
+.service-detail__hero h1{max-width:1040px;text-wrap:balance;font-size:clamp(34px,4vw,60px)}
+.service-detail__hero .service-detail__lead{max-width:72ch}
+.service-detail__audience h2,.service-detail__intro h2,.service-detail__scenes-heading h2{max-width:1040px;text-wrap:balance;line-height:1.18}
+.service-detail__intro{max-width:1040px}
+.service-detail__audience>p:last-child{max-width:80ch;padding-left:0;border-left:0;font-size:18px;line-height:1.8;color:var(--ink)}
+.service-detail__steps p,.service-detail__faq-list details>p,.service-detail__intro>p:last-child{font-size:16px;line-height:1.75;color:var(--ink)}
+.service-detail p strong,.institutional-reading p strong{font-weight:700;color:inherit}
+.article-detail__body{grid-template-columns:220px minmax(0,1fr);gap:clamp(32px,5vw,80px)}
+.article-prose{color:var(--ink);font-size:18px;line-height:1.8}
+.article-prose p,.article-prose ul{max-width:75ch}
+.article-prose h2{max-width:100%;font-size:clamp(26px,2.5vw,36px);text-wrap:balance}
+.article-prose strong{font-weight:700}
+.service-detail .service-detail__hero-grid{width:min(calc(100% - 48px),var(--container));margin-inline:auto;display:block}
+.service-detail .service-detail__hero-copy{width:100%;max-width:1040px}
+.service-detail .service-detail__hero h1{width:100%;max-width:1040px;font-size:clamp(34px,3.6vw,56px);line-height:1.12;text-wrap:pretty}
+.service-detail .service-detail__body-content{width:100%;max-width:none;margin-inline:0}
+.service-detail .service-detail__audience{width:100%;max-width:none;padding-bottom:40px}
+.service-detail .service-detail__audience h2{width:100%;max-width:none;font-size:clamp(28px,2.5vw,40px);line-height:1.2;text-wrap:pretty}
+.service-detail .service-detail__audience>p:last-child{max-width:85ch;border:0;padding:0;margin-top:20px;line-height:1.75;font-size:18px}
+.service-detail .service-detail__scenes-heading{max-width:none}
+.service-detail .service-detail__intro{max-width:none}
+@media(max-width:767px){.service-detail .service-detail__hero h1{font-size:clamp(30px,7vw,40px)}.service-detail .service-detail__audience h2{font-size:28px}.service-detail .service-detail__audience>p:last-child{font-size:16px}.service-detail .service-detail__audience{padding-bottom:24px}}
+.service-detail__intro>p:last-child,.service-detail__faq-list details>p{max-width:75ch}
+@media(max-width:1000px){.institutional-reading__layout{grid-template-columns:1fr;gap:32px;max-width:820px;margin-inline:auto}.institutional-reading__index{position:static;background:var(--canvas);padding:20px;border-radius:var(--radius-md)}.institutional-reading__index>a{min-height:44px;display:flex;align-items:center}}
+@media(max-width:900px){.institutional-reading__sections>section{grid-template-columns:1fr;gap:0}.institutional-reading__sections h2{grid-column:1;grid-row:auto;margin-bottom:20px}.institutional-reading__sections p{grid-column:1}.article-detail__body{grid-template-columns:1fr}.institutional-reading__sections{gap:40px}}
+@media(max-width:600px){.institutional-reading__sections p,.article-prose{font-size:16px;line-height:1.75}.service-detail__audience>p:last-child{font-size:16px;line-height:1.75}.service-detail__hero h1,.institutional-reading__hero-copy h1{font-size:34px}.institutional-reading__hero-copy>p{max-width:100%}.service-detail__hero-copy{max-width:100%}}

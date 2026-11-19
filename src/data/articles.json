@@ -1,0 +1,350 @@
+[
+  {
+    "slug": "estoque-cheio-produto-faltando",
+    "title": "Estoque cheio, produto faltando: por onde começar?",
+    "summary": "O saldo total pode esconder produtos em falta. Veja como comparar disponibilidade, cobertura e prazo de reposição antes de comprar mais.",
+    "category": "Mercado e gestão",
+    "format": "Leitura prática",
+    "updatedAt": "2026-10-19",
+    "image": "/assets/visuals-2026/11-armazenagem.webp",
+    "imageAlt": "Armazém com paletes, equipe e movimentação de cargas",
+    "readTime": "4 min",
+    "sources": [
+      "csn"
+    ],
+    "relatedSlugs": [
+      "planejar-fretes-recorrentes",
+      "preparar-carga-para-coleta"
+    ]
+  },
+  {
+    "slug": "varejo-media-e-mix",
+    "title": "Varejo perto da estabilidade: o que a média esconde do seu mix",
+    "summary": "Os setores podem caminhar em direções diferentes. Veja como cruzar o indicador de mercado com seus próprios pedidos.",
+    "category": "Mercado e gestão",
+    "format": "Leitura prática",
+    "updatedAt": "2026-10-18",
+    "image": "/assets/visuals-2026/14-distribuicao-urbana.webp",
+    "imageAlt": "Entrega de mercadoria a um estabelecimento comercial",
+    "readTime": "2 min",
+    "sources": [
+      "pmc"
+    ],
+    "relatedSlugs": [
+      "estoque-cheio-produto-faltando",
+      "planejar-fretes-recorrentes"
+    ]
+  },
+  {
+    "slug": "pedido-whatsapp-acompanhamento",
+    "title": "Seu pedido nasceu no WhatsApp. Quem acompanha agora?",
+    "summary": "Um registro simples evita que o próximo responsável dependa de procurar mensagens antigas.",
+    "category": "Pessoas e confiança",
+    "format": "Leitura prática",
+    "updatedAt": "2026-10-18",
+    "image": "/assets/visuals-2026/10-atendimento.webp",
+    "imageAlt": "Profissional acompanha informações da operação em um posto de atendimento",
+    "readTime": "2 min",
+    "sources": [
+      "tic"
+    ],
+    "relatedSlugs": [
+      "informacao-da-entrega",
+      "conferencia-e-confianca"
+    ]
+  },
+  {
+    "slug": "ia-pequena-empresa-primeira-tarefa",
+    "title": "IA na pequena empresa: escolha uma tarefa antes da ferramenta",
+    "summary": "Um piloto pequeno, com revisão e medida de erro, ajuda a avaliar se a tecnologia melhora a rotina.",
+    "category": "Tecnologia e produtividade",
+    "format": "Leitura prática",
+    "updatedAt": "2026-10-18",
+    "image": "/assets/visuals-2026/04-hero-atendimento.webp",
+    "imageAlt": "Profissional de atendimento consulta informações de transporte",
+    "readTime": "2 min",
+    "sources": [
+      "tic"
+    ],
+    "relatedSlugs": [
+      "dados-versao-certa",
+      "status-antes-da-automacao"
+    ]
+  },
+  {
+    "slug": "aumento-preco-indice-orcamento",
+    "title": "O preço mudou. Você sabe de onde veio o aumento?",
+    "summary": "Índice de mercado e cotação cumprem papéis diferentes na compra de materiais e serviços.",
+    "category": "Mercado e gestão",
+    "format": "Leitura prática",
+    "updatedAt": "2026-10-18",
+    "image": "/assets/visuals-2026/08-motorista.webp",
+    "imageAlt": "Motorista e coordenador conferem informações junto ao caminhão",
+    "readTime": "2 min",
+    "sources": [
+      "sinapi"
+    ],
+    "relatedSlugs": [
+      "alem-do-preco-na-cotacao",
+      "o-que-compoe-o-valor-do-frete"
+    ]
+  },
+  {
+    "slug": "dados-versao-certa",
+    "title": "Quanto tempo sua equipe perde procurando a informação certa?",
+    "summary": "Antes de trocar de sistema, defina onde está o registro válido e quem o atualiza.",
+    "category": "Tecnologia e produtividade",
+    "format": "Leitura prática",
+    "updatedAt": "2026-10-18",
+    "image": "/assets/visuals-2026/16-hero-home-recorrente.webp",
+    "imageAlt": "Profissional confere volumes com um leitor portátil",
+    "readTime": "2 min",
+    "sources": [
+      "tic"
+    ],
+    "relatedSlugs": [
+      "pedido-whatsapp-acompanhamento",
+      "status-antes-da-automacao"
+    ]
+  },
+  {
+    "slug": "reposicao-pecas-vendas-oscilam",
+    "title": "Reposição de peças: o que olhar quando as vendas oscilam?",
+    "summary": "Giro, criticidade e prazo de reposição ajudam a evitar uma decisão igual para todos os itens.",
+    "category": "Mercado e gestão",
+    "format": "Leitura prática",
+    "updatedAt": "2026-10-18",
+    "image": "/assets/services/embarques-recorrentes-3d.webp",
+    "imageAlt": "Representação de caminhões conectando um centro de distribuição a empresas",
+    "readTime": "2 min",
+    "sources": [
+      "pmc"
+    ],
+    "relatedSlugs": [
+      "estoque-cheio-produto-faltando",
+      "planejar-fretes-recorrentes"
+    ]
+  },
+  {
+    "slug": "embalagem-etiqueta-legivel",
+    "title": "Embalagem e etiqueta: o que precisa continuar legível até a entrega?",
+    "summary": "Proteção e identificação precisam funcionar juntas durante a movimentação da carga.",
+    "category": "Operação",
+    "format": "Leitura prática",
+    "updatedAt": "2026-10-18",
+    "image": "/assets/visuals-2026/12-triagem.webp",
+    "imageAlt": "Operador lê a etiqueta de uma caixa durante a triagem",
+    "readTime": "2 min",
+    "sources": [
+      "correios"
+    ],
+    "relatedSlugs": [
+      "preparar-carga-para-coleta",
+      "conferencia-e-confianca"
+    ]
+  },
+  {
+    "slug": "reposicao-validade-saude",
+    "title": "Vender mais exige rever a reposição? Nem sempre do mesmo jeito",
+    "summary": "Em produtos com validade ou condição especial de conservação, disponibilidade é apenas uma parte da decisão.",
+    "category": "Mercado e gestão",
+    "format": "Leitura prática",
+    "updatedAt": "2026-10-18",
+    "image": "/assets/visuals-2026/13-qualidade.webp",
+    "imageAlt": "Supervisora inspeciona uma embalagem no armazém",
+    "readTime": "2 min",
+    "sources": [
+      "pmc",
+      "anvisa"
+    ],
+    "relatedSlugs": [
+      "estoque-cheio-produto-faltando",
+      "preparar-carga-para-coleta"
+    ]
+  },
+  {
+    "slug": "status-antes-da-automacao",
+    "title": "Antes de automatizar o estoque, combine o que cada status significa",
+    "summary": "Recebido, conferido, disponível e reservado precisam apontar para acontecimentos claros.",
+    "category": "Tecnologia e produtividade",
+    "format": "Leitura prática",
+    "updatedAt": "2026-10-18",
+    "image": "/assets/visuals-2026/06-conferencia.webp",
+    "imageAlt": "Equipe confere documentos e cargas paletizadas",
+    "readTime": "2 min",
+    "sources": [
+      "tic"
+    ],
+    "relatedSlugs": [
+      "dados-versao-certa",
+      "conferencia-e-confianca"
+    ]
+  },
+  {
+    "slug": "o-que-compoe-o-valor-do-frete",
+    "category": "Frete sem caixa-preta",
+    "title": "O que compõe o valor do frete?",
+    "summary": "Um estudo sobre combustível, mão de obra, frota, seguros, pedágio e tributos, e por que não existe uma composição percentual única para todo frete.",
+    "image": "/assets/editorial-bomfim-2026/custos-visao-geral.webp",
+    "imageAlt": "Ilustração editorial de caminhão e elementos que representam os custos de uma operação de transporte",
+    "readTime": "7 min",
+    "format": "Guia prático",
+    "updatedAt": "2026-10-22",
+    "sources": [],
+    "relatedSlugs": []
+  },
+  {
+    "slug": "vale-pedagio-na-leitura-da-rota",
+    "category": "Operação",
+    "title": "Vale-pedágio: o que conferir na contratação?",
+    "summary": "Entenda por que o percurso e a modalidade da operação precisam estar claros na conversa sobre pedágio.",
+    "image": "/assets/visuals-2026/17-banner-cobertura.webp",
+    "imageAlt": "Caminhão em corredor rodoviário ao fim da tarde",
+    "readTime": "2 min",
+    "format": "Entenda o tema",
+    "updatedAt": "2026-10-18",
+    "sources": [
+      "vpo",
+      "tag",
+      "ntc"
+    ],
+    "relatedSlugs": []
+  },
+  {
+    "slug": "piso-minimo-e-carga-fracionada",
+    "category": "Operação",
+    "title": "Piso mínimo: lotação e fracionada têm o mesmo escopo?",
+    "summary": "A ANTT diferencia as modalidades. Veja quais características precisam ser analisadas antes de usar a tabela.",
+    "image": "/assets/services/carga-fracionada-3d.webp",
+    "imageAlt": "Representação da organização de volumes em uma operação de carga fracionada",
+    "readTime": "2 min",
+    "format": "Contexto do setor",
+    "updatedAt": "2026-10-18",
+    "sources": [
+      "piso"
+    ],
+    "relatedSlugs": []
+  },
+  {
+    "slug": "ad-valorem-gris-e-seguro",
+    "category": "Frete sem caixa-preta",
+    "title": "Ad valorem, GRIS e seguro: entenda a diferença",
+    "summary": "Três termos frequentes na cotação, com funções que precisam ser explicadas separadamente.",
+    "image": "/assets/services/distribuicao-personalizada-3d.webp",
+    "imageAlt": "Representação de uma rede de distribuição com diferentes destinos",
+    "readTime": "2 min",
+    "format": "Glossário",
+    "updatedAt": "2026-10-18",
+    "sources": [
+      "ntc",
+      "susep"
+    ],
+    "relatedSlugs": []
+  },
+  {
+    "slug": "informacao-da-entrega",
+    "category": "Pessoas e confiança",
+    "title": "Quando a informação da entrega chega tarde",
+    "summary": "Um fluxo simples para comunicar ocorrências sem deixar o cliente refazer o caminho da informação.",
+    "image": "/assets/visuals-2026/01-hero-pessoas.webp",
+    "imageAlt": "Equipe de logística reunida em um centro de distribuição",
+    "readTime": "2 min",
+    "format": "Operação na prática",
+    "updatedAt": "2026-10-18",
+    "sources": [
+      "tic"
+    ],
+    "relatedSlugs": []
+  },
+  {
+    "slug": "atraso-antes-da-estrada",
+    "category": "Pessoas e confiança",
+    "title": "O que pode atrasar uma coleta antes da saída",
+    "summary": "Endereço, carga disponível e acesso ao local: três pontos para conferir antes de agendar.",
+    "image": "/assets/visuals-2026/07-carregamento.webp",
+    "imageAlt": "Equipe acompanha o carregamento de um caminhão",
+    "readTime": "2 min",
+    "format": "Checklist",
+    "updatedAt": "2026-10-18",
+    "sources": [
+      "correios"
+    ],
+    "relatedSlugs": []
+  },
+  {
+    "slug": "planejar-fretes-recorrentes",
+    "category": "Operação",
+    "showcaseTheme": "Operação e abastecimento",
+    "title": "Como planejar fretes recorrentes sem comprometer o abastecimento",
+    "summary": "Transforme a rotina de pedidos em um plano de embarques que também contemple as exceções.",
+    "image": "/assets/visuals-2026/09-frota-leve.webp",
+    "imageAlt": "Caminhões leves em um centro de distribuição",
+    "readTime": "2 min",
+    "format": "Guia prático",
+    "updatedAt": "2026-10-18",
+    "sources": [
+      "pmc"
+    ],
+    "relatedSlugs": []
+  },
+  {
+    "slug": "alem-do-preco-na-cotacao",
+    "category": "Frete sem caixa-preta",
+    "showcaseTheme": "Decisão de frete",
+    "title": "Além do preço: o que avaliar numa cotação de carga fracionada",
+    "summary": "Uma comparação simples para entender o serviço que acompanha cada valor.",
+    "image": "/assets/visuals-2026/15-equipe.webp",
+    "imageAlt": "Profissionais de logística conversam sobre a operação",
+    "readTime": "2 min",
+    "format": "Guia de decisão",
+    "updatedAt": "2026-10-18",
+    "sources": [
+      "ntc"
+    ],
+    "relatedSlugs": []
+  },
+  {
+    "slug": "confirmar-rota-no-nordeste",
+    "category": "Operação",
+    "showcaseTheme": "Rotas do Nordeste",
+    "title": "Como confirmar se uma rota atende sua operação no Nordeste",
+    "summary": "Veja quais informações compartilhar para confirmar atendimento, prazo e condições de uma rota no Nordeste.",
+    "image": "/assets/editorial-bomfim-2026/rota-nordeste.webp",
+    "imageAlt": "Ilustração de mapa estilizado do Nordeste com pontos conectados por uma rota de transporte de cargas",
+    "readTime": "5 min",
+    "format": "Checklist",
+    "updatedAt": "2026-10-22",
+    "sources": [],
+    "relatedSlugs": []
+  },
+  {
+    "slug": "conferencia-e-confianca",
+    "category": "Pessoas e confiança",
+    "showcaseTheme": "Bastidores e confiança",
+    "title": "Conferência de carga: o que registrar ao receber",
+    "summary": "Quantidade, identificação e condição visível da embalagem ajudam a esclarecer divergências.",
+    "image": "/assets/visuals-2026/02-hero-estrutura.webp",
+    "imageAlt": "Equipe trabalha na conferência de cargas em um centro de distribuição",
+    "readTime": "2 min",
+    "format": "Bastidores",
+    "updatedAt": "2026-10-18",
+    "sources": [
+      "correios"
+    ],
+    "relatedSlugs": []
+  },
+  {
+    "slug": "preparar-carga-para-coleta",
+    "category": "Operação",
+    "showcaseTheme": "Guias para expedir",
+    "title": "Como preparar sua carga para a coleta",
+    "summary": "Organize volumes, embalagem, identificação e informações para deixar o embarque pronto para avaliação e coleta.",
+    "image": "/assets/editorial-bomfim-2026/preparo-carga.webp",
+    "imageAlt": "Ilustração de um pallet com caixas sendo conferidas e identificadas antes da coleta",
+    "readTime": "5 min",
+    "format": "Checklist",
+    "updatedAt": "2026-10-22",
+    "sources": [],
+    "relatedSlugs": []
+  }
+]

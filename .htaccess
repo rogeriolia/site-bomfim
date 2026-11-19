@@ -1,0 +1,42 @@
+Options -MultiViews
+DirectoryIndex dist/index.html
+RewriteEngine On
+RewriteBase /site-bomfim/
+# API Python (Uvicorn on 127.0.0.1:5183). Requires mod_proxy; prefer vhost ProxyPass in production.
+RewriteRule ^api/(.*)$ http://127.0.0.1:5183/api/$1 [P,L]
+
+RewriteRule ^(\.asset-originals|\.retired-code|scripts)(/|$) - [F,L]
+RewriteRule ^\.env(\.|$) - [F,L,NC]
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.html$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+  <FilesMatch "-[A-Za-z0-9_-]{8}\.(js|css)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.(webp|png|jpe?g|svg|woff2)$">
+    Header set Cache-Control "public, max-age=604800"
+  </FilesMatch>
+</IfModule>
+
+# The provisional server currently mirrors the project directory. Serve only the built app.
+RewriteRule ^assets/(.+)$ dist/assets/$1 [L]
+RewriteRule ^favicon\.svg$ dist/favicon.svg [L]
+RewriteRule ^galeria-equipe$ /site-bomfim/galeria-equipe/ [R=302,L]
+RewriteRule ^galeria-equipe/$ dist/galeria-equipe/index.html [L]
+RewriteRule ^galeria-equipe/(.+)$ dist/galeria-equipe/$1 [L]
+RewriteRule ^revisao-editorial$ /site-bomfim/revisao-editorial/ [R=302,L]
+RewriteRule ^revisao-editorial/$ dist/revisao-editorial/index.html [L]
+RewriteRule ^revisao-editorial/(.+)$ dist/revisao-editorial/$1 [L]
+RewriteRule ^$ dist/index.html [L]
+
+# Do not expose source files or local tooling when the whole project is uploaded.
+RewriteRule ^(src|node_modules|public)(/|$) - [F,L]
+RewriteRule ^(package(-lock)?\.json|vite\.config\.js|README\.md|DESIGN_SYSTEM\.md)$ - [F,L,NC]
+
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ - [L]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+RewriteRule ^ dist/index.html [L]

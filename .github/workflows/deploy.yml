@@ -1,0 +1,56 @@
+# Deploy apenas do repositório site-bomfim → /opt/site-bomfim (secret DEPLOY_PATH).
+# Não toca /opt/bomfim nem o repositório bomfim.
+name: Deploy site + API
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-bomfim
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - name: Instalar zip (galeria no build)
+        run: sudo apt-get update && sudo apt-get install -y zip
+
+      - name: Build frontend
+        run: npm ci && npm run build
+
+      - name: Enviar artefatos ao servidor
+        uses: appleboy/scp-action@v1.0.0
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.SSH_PORT || 22 }}
+          source: "dist,backend,run.py,requirements.txt,.htaccess,api/schema.sql,scripts/server,deploy"
+          target: ${{ secrets.DEPLOY_PATH }}
+          overwrite: true
+          strip_components: 0
+
+      - name: Pós-deploy (pip + reiniciar API)
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.SSH_PORT || 22 }}
+          script: |
+            set -e
+            cd "${{ secrets.DEPLOY_PATH }}"
+            chmod +x scripts/server/*.sh
+            bash scripts/server/post-deploy.sh
