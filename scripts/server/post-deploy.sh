@@ -25,4 +25,6 @@ fi
 source "$VENV/bin/activate"
 pip install -q -r requirements.txt
 
-bash "$ROOT/scripts/server/restart-services.sh"
+bash "$ROOT/scripts/server/restart-services.sh" || {
+  echo "Aviso: serviço ainda não configurado (instale bomfim-site-api no systemd)." >&2
+}

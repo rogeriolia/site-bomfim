@@ -30,27 +30,35 @@ jobs:
       - name: Build frontend
         run: npm ci && npm run build
 
-      - name: Enviar artefatos ao servidor
+      - name: Empacotar release
+        run: |
+          tar czf release.tgz \
+            dist backend run.py requirements.txt .htaccess \
+            api/schema.sql scripts/server deploy
+
+      - name: Enviar release ao servidor
         uses: appleboy/scp-action@v1.0.0
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          port: ${{ secrets.SSH_PORT || 22 }}
-          source: "dist,backend,run.py,requirements.txt,.htaccess,api/schema.sql,scripts/server,deploy"
+          port: ${{ secrets.SSH_PORT != '' && secrets.SSH_PORT || '22' }}
+          source: "release.tgz"
           target: ${{ secrets.DEPLOY_PATH }}
           overwrite: true
-          strip_components: 0
 
-      - name: Pós-deploy (pip + reiniciar API)
+      - name: Extrair e pós-deploy
         uses: appleboy/ssh-action@v1.2.0
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          port: ${{ secrets.SSH_PORT || 22 }}
+          port: ${{ secrets.SSH_PORT != '' && secrets.SSH_PORT || '22' }}
           script: |
             set -e
             cd "${{ secrets.DEPLOY_PATH }}"
+            tar xzf release.tgz
+            rm -f release.tgz
+            test -f deploy/systemd/bomfim-site-api.service.example
             chmod +x scripts/server/*.sh
             bash scripts/server/post-deploy.sh

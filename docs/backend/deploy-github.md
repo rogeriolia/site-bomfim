@@ -36,7 +36,8 @@ Configure **somente neste repositório `site-bomfim`:**
 
 ```bash
 sudo mkdir -p /opt/site-bomfim
-sudo chown "$USER":www-data /opt/site-bomfim
+# O SSH_USER do GitHub Actions precisa poder escrever aqui (não só root com .env manual):
+sudo chown SEU_SSH_USER:www-data /opt/site-bomfim
 chmod 775 /opt/site-bomfim
 
 nano /opt/site-bomfim/.env
@@ -47,6 +48,15 @@ nano /opt/site-bomfim/.env
 Schema (se ainda não existir): `psql … -f /opt/site-bomfim/api/schema.sql` após o primeiro deploy.
 
 ### 3. API do site (systemd **bomfim-site-api**)
+
+Se `cp` falhar com *No such file*, o deploy ainda não rodou ou falhou — confira **GitHub → Actions**. No servidor:
+
+```bash
+ls -la /opt/site-bomfim/
+find /opt/site-bomfim -name 'bomfim-site-api.service.example' 2>/dev/null
+```
+
+Depois que existir `deploy/systemd/...`:
 
 ```bash
 sudo cp /opt/site-bomfim/deploy/systemd/bomfim-site-api.service.example \
