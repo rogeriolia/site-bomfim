@@ -23,8 +23,8 @@ function DiscoveryHome() {
   return <main className="home-discovery">
     <MarketingHero image="/assets/visuals-2026/02-hero-estrutura.webp" className="home-hero">
       <div className="max-w-[680px]">
-        <h1 className="heading text-[clamp(2.15rem,4.2vw,3.9rem)]">Carga fracionada para empresas do Nordeste.</h1>
-        <p className="mt-5 max-w-[570px] text-base leading-7 text-white/90 sm:text-lg">Desde 1991, fazemos coleta, transporte e distribuição para empresas da região.</p>
+        <h1 className="heading text-[clamp(2.15rem,4.2vw,3.9rem)]">Carga fracionada para todo o Nordeste.</h1>
+        <p className="mt-5 max-w-[570px] text-base leading-7 text-white/90 sm:text-lg">Há mais de 30 anos realizando coleta, transporte e distribuição para a região.</p>
         <HeroActions className="mt-7"><Button href="/solucoes" size="lg">Ver soluções <ArrowRight size={18} /></Button><Button href="/comercial" variant="on-dark" size="lg">Falar com comercial <ArrowRight size={18} /></Button></HeroActions>
       </div>
     </MarketingHero>
@@ -46,7 +46,7 @@ function DiscoveryHome() {
       </div>
     </section>
 
-    <section className="home-proof" aria-labelledby="home-proof-title"><div className="container-site"><div className="home-proof__intro"><h2 id="home-proof-title" className="heading">Números da operação em 2025</h2><p>Dados de janeiro a dezembro de 2025. Os volumes mensais estão indicados em cada item.</p></div><div className="home-proof__stats"><div><strong>21 mil+</strong><span>entregas realizadas por mês</span></div><div><strong>5.400 t</strong><span>transportadas por mês</span></div><div><strong>400+</strong><span>colaboradores diretos</span></div><div><strong>8</strong><span>unidades no Nordeste</span></div></div></div></section>
+    <section className="home-proof" aria-labelledby="home-proof-title"><div className="container-site"><div className="home-proof__intro"><h2 id="home-proof-title" className="heading">Números da operação em 2025</h2><p>Dados de janeiro a dezembro de 2025.</p></div><div className="home-proof__stats"><div><strong>21 mil+</strong><span>entregas realizadas por mês</span></div><div><strong>5.400 t</strong><span>transportadas por mês</span></div><div><strong>400+</strong><span>colaboradores diretos</span></div><div><strong>8</strong><span>unidades no Nordeste</span></div></div></div></section>
 
     <EditorialFeature id="home-structure-title" title="Da coleta à entrega, cada etapa conta." description="Conferência, gestão de risco, comunicação e tratamento de exceções acompanham o embarque. Conheça as equipes, unidades, processos e tecnologias da operação." image="/assets/visuals-2026/11-armazenagem.webp" imageAlt="Imagem de equipe trabalhando em um armazém, com cargas e empilhadeira" href="/estrutura" action="Conhecer a estrutura" reverse />
 

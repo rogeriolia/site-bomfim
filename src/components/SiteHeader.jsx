@@ -81,7 +81,7 @@ export default function SiteHeader({ mode = 'site' }) {
   }, [mobileOpen])
 
   return (
-    <header ref={headerRef} onBlurCapture={event => { if (!event.currentTarget.contains(event.relatedTarget)) setOpenMenu(null) }} className={`site-header relative z-30 text-white ${mode === 'content' || mode === 'conversion' ? 'site-header--content bg-[var(--dark)]' : 'bg-[var(--brand)]'}`}>
+    <header ref={headerRef} onBlurCapture={event => { if (!event.currentTarget.contains(event.relatedTarget)) setOpenMenu(null) }} className={`site-header fixed inset-x-0 top-0 z-30 w-full text-white ${mode === 'content' || mode === 'conversion' ? 'site-header--content bg-[var(--dark)]' : 'bg-[var(--brand)]'}`}>
       <div className="container-site flex h-[76px] items-center justify-between gap-4">
         {mode === 'conversion' ? <span className="shrink-0" aria-label="Bomfim Cargas"><img className="site-header__brand-logo logo-white h-[29px] w-auto sm:h-8" src="/assets/brand/bomfim-cargas.webp" alt="Bomfim Cargas" /></span> : <Link to="/" aria-label="Bomfim Cargas — início" className="shrink-0"><img className="site-header__brand-logo logo-white h-[29px] w-auto sm:h-8" src="/assets/brand/bomfim-cargas.webp" alt="Bomfim Cargas" /></Link>}
         {mode !== 'conversion' && <nav aria-label="Navegação principal" className="hidden items-center gap-4 xl:flex">
