@@ -17,7 +17,7 @@ O terminal mostra o endereço do site (**http://localhost:5173/**). `Ctrl+C` enc
 
 Só a API (produção/local): `python run.py --api-only`.
 
-`npm run build` gera a versão estática em `dist/`. Deploy **deste repo** (`site-bomfim` → `/opt/site-bomfim`): [`docs/backend/deploy-github.md`](docs/backend/deploy-github.md). O projeto **bomfim** (`/opt/bomfim`) não é alterado por este fluxo.
+`npm run build` gera a versão estática em `dist/`. Deploy **deste repo** (`site-bomfim` → `/opt/site-bomfim`): [`docs/backend/deploy-github.md`](docs/backend/deploy-github.md#dia-a-dia-após-configuração-única) — após a configuração única, basta **push na `main`**. O projeto **bomfim** (`/opt/bomfim`) não é alterado por este fluxo.
 
 ## URL provisória
 

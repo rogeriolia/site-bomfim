@@ -1,0 +1,53 @@
+# Testa SSH e estado mínimo no servidor sem build nem deploy completo.
+name: Verificar conexão deploy
+
+on:
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    env:
+      DEPLOY_PATH: /opt/site-bomfim
+    steps:
+      - name: Validar secrets SSH
+        env:
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_USER: ${{ secrets.SSH_USER }}
+          SSH_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        run: |
+          set -e
+          failed=0
+          for pair in "SSH_HOST:SSH_HOST" "SSH_USER:SSH_USER" "SSH_KEY:SSH_PRIVATE_KEY"; do
+            var="${pair%%:*}"
+            label="${pair#*:}"
+            eval "val=\$$var"
+            if [ -z "$val" ]; then
+              echo "::error::Secret ausente: $label"
+              failed=1
+            fi
+          done
+          if [ "$failed" -ne 0 ]; then
+            exit 1
+          fi
+
+      - name: Checar pasta, .env e API
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.SSH_PORT != '' && secrets.SSH_PORT || '22' }}
+          script: |
+            set -e
+            DEPLOY="${{ env.DEPLOY_PATH }}"
+            test -d "$DEPLOY" || { echo "::error::Pasta $DEPLOY inexistente"; exit 1; }
+            if [[ -f "$DEPLOY/.env" ]]; then
+              echo "ok: .env presente"
+            else
+              echo "::warning::.env ausente em $DEPLOY (crie a partir de .env.bomfim.example)"
+            fi
+            if command -v systemctl >/dev/null 2>&1; then
+              systemctl is-active bomfim-site-api 2>/dev/null && echo "ok: bomfim-site-api ativa" || echo "::warning::bomfim-site-api inativa ou unit ausente"
+            fi
+            ls -la "$DEPLOY/dist/index.html" 2>/dev/null && echo "ok: dist/index.html" || echo "::warning::dist ainda não deployado"

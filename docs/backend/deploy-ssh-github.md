@@ -9,9 +9,8 @@ Se no servidor **só existe `.env`**, o job falha em **Enviar release ao servido
 | `SSH_HOST` | IP público do Vultr |
 | `SSH_USER` | `root` |
 | `SSH_PRIVATE_KEY` | chave **privada** completa (veja abaixo) |
-| `DEPLOY_PATH` | `/opt/site-bomfim` |
 
-`SSH_PORT` — só se não for 22.
+`SSH_PORT` — só se não for 22. O caminho `/opt/site-bomfim` está fixo no workflow (secret `DEPLOY_PATH` não é mais necessário).
 
 ## Chave dedicada para o Actions (recomendado)
 

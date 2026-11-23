@@ -1,4 +1,4 @@
-# Reinicia só bomfim-site-api em DEPLOY_PATH (/opt/site-bomfim). Não afeta /opt/bomfim.
+# Reinicia só bomfim-site-api em /opt/site-bomfim. Não afeta /opt/bomfim.
 name: Reiniciar API (ler .env)
 
 # Use após alterar o .env manualmente no servidor, sem novo deploy de código.
@@ -8,16 +8,39 @@ on:
 jobs:
   restart-api:
     runs-on: ubuntu-latest
+    env:
+      DEPLOY_PATH: /opt/site-bomfim
     steps:
+      - name: Validar secrets SSH
+        env:
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_USER: ${{ secrets.SSH_USER }}
+          SSH_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        run: |
+          set -e
+          failed=0
+          for pair in "SSH_HOST:SSH_HOST" "SSH_USER:SSH_USER" "SSH_KEY:SSH_PRIVATE_KEY"; do
+            var="${pair%%:*}"
+            label="${pair#*:}"
+            eval "val=\$$var"
+            if [ -z "$val" ]; then
+              echo "::error::Secret ausente: $label"
+              failed=1
+            fi
+          done
+          if [ "$failed" -ne 0 ]; then
+            exit 1
+          fi
+
       - name: Reiniciar serviço no servidor
         uses: appleboy/ssh-action@v1.2.0
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          port: ${{ secrets.SSH_PORT || 22 }}
+          port: ${{ secrets.SSH_PORT != '' && secrets.SSH_PORT || '22' }}
           script: |
             set -e
-            cd "${{ secrets.DEPLOY_PATH }}"
+            cd "${{ env.DEPLOY_PATH }}"
             chmod +x scripts/server/restart-services.sh 2>/dev/null || true
             bash scripts/server/restart-services.sh

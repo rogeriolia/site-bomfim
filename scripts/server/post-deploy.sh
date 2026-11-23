@@ -41,6 +41,39 @@ if [[ -f "$EXAMPLE" ]] && command -v systemctl >/dev/null 2>&1; then
   fi
 fi
 
+DEPLOY_USER="${BOMFIM_DEPLOY_USER:-www-data}"
+if [[ -f "$ROOT/.env" ]]; then
+  line="$(grep -E '^BOMFIM_DEPLOY_USER=' "$ROOT/.env" | head -1 || true)"
+  if [[ -n "$line" ]]; then
+    val="${line#BOMFIM_DEPLOY_USER=}"
+    val="${val%\"}"
+    val="${val#\"}"
+    DEPLOY_USER="$val"
+  fi
+fi
+
+run_privileged() {
+  if [[ "$(id -u)" -eq 0 ]]; then
+    "$@"
+  elif command -v sudo >/dev/null 2>&1; then
+    sudo "$@"
+  else
+    return 1
+  fi
+}
+
+mkdir -p "$ROOT/logs"
+for path in dist backend .venv scripts run.py requirements.txt .htaccess deploy api logs; do
+  [[ -e "$ROOT/$path" ]] || continue
+  run_privileged chown -R "${DEPLOY_USER}:${DEPLOY_USER}" "$ROOT/$path" 2>/dev/null || true
+done
+if [[ -f "$ROOT/.env" ]]; then
+  run_privileged chown root:"${DEPLOY_USER}" "$ROOT/.env" 2>/dev/null || true
+  run_privileged chmod 640 "$ROOT/.env" 2>/dev/null || true
+fi
+
+bash "$ROOT/scripts/server/ensure-schema.sh" || true
+
 bash "$ROOT/scripts/server/restart-services.sh" || {
   echo "Aviso: serviço ainda não configurado (instale bomfim-site-api no systemd)." >&2
 }

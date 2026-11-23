@@ -1,4 +1,4 @@
-# Deploy apenas do repositório site-bomfim → /opt/site-bomfim (secret DEPLOY_PATH).
+# Deploy apenas do repositório site-bomfim → /opt/site-bomfim (fixo no env abaixo).
 # Não toca /opt/bomfim nem o repositório bomfim.
 name: Deploy site + API
 
@@ -14,6 +14,8 @@ concurrency:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    env:
+      DEPLOY_PATH: /opt/site-bomfim
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -23,16 +25,22 @@ jobs:
           SSH_HOST: ${{ secrets.SSH_HOST }}
           SSH_USER: ${{ secrets.SSH_USER }}
           SSH_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
         run: |
           set -e
-          for name in SSH_HOST SSH_USER SSH_KEY DEPLOY_PATH; do
-            eval "val=\$$name"
+          failed=0
+          for pair in "SSH_HOST:SSH_HOST" "SSH_USER:SSH_USER" "SSH_KEY:SSH_PRIVATE_KEY"; do
+            var="${pair%%:*}"
+            label="${pair#*:}"
+            eval "val=\$$var"
             if [ -z "$val" ]; then
-              echo "::error::Secret ausente (SSH_HOST, SSH_USER, SSH_PRIVATE_KEY ou DEPLOY_PATH). Veja docs/backend/deploy-ssh-github.md"
-              exit 1
+              echo "::error::Secret ausente: $label"
+              failed=1
             fi
           done
+          if [ "$failed" -ne 0 ]; then
+            echo "Veja docs/backend/deploy-ssh-github.md"
+            exit 1
+          fi
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -60,7 +68,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.SSH_PORT != '' && secrets.SSH_PORT || '22' }}
           source: "release.tgz"
-          target: ${{ secrets.DEPLOY_PATH }}
+          target: ${{ env.DEPLOY_PATH }}
           overwrite: true
           timeout: 120s
           command_timeout: 30m
@@ -76,8 +84,8 @@ jobs:
           command_timeout: 30m
           script: |
             set -e
-            mkdir -p "${{ secrets.DEPLOY_PATH }}"
-            cd "${{ secrets.DEPLOY_PATH }}"
+            mkdir -p "${{ env.DEPLOY_PATH }}"
+            cd "${{ env.DEPLOY_PATH }}"
             tar xzf release.tgz
             rm -f release.tgz
             test -f deploy/systemd/bomfim-site-api.service.example
