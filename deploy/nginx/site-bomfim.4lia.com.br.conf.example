@@ -57,7 +57,12 @@ server {
 
     location /site-bomfim/ {
         alias /opt/site-bomfim/dist/;
-        try_files $uri $uri/ =404;
+        try_files $uri $uri/ @site_bomfim_spa;
+    }
+
+    location @site_bomfim_spa {
+        root /opt/site-bomfim/dist;
+        try_files /index.html =404;
     }
 
     location = /site-bomfim {
