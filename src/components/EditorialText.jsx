@@ -5,7 +5,7 @@ const phrases = [
   'peso e dimensões', 'peso, dimensões e valor', 'janelas de recebimento',
   'origem e destino', 'gerenciamento de risco', 'prazo de entrega',
   'prazos de entrega', 'perfil da carga', 'frequência de embarques',
-  'rastreabilidade', 'conferência', 'armazenagem', 'paletização',
+  'rastreabilidade', 'armazenagem', 'paletização',
   'cross-docking', 'última milha', 'estrutura própria', 'Nordeste',
   'segurança da carga', 'comprovante de entrega', 'valor da mercadoria',
 ]

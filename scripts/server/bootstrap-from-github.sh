@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # Instala ou atualiza o site em /opt/site-bomfim sem GitHub Actions.
+# Use LF line endings only (pipe from Windows with Get-Content -Raw can inject CRLF).
 set -euo pipefail
 
 TARGET="/opt/site-bomfim"

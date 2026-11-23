@@ -36,6 +36,16 @@ Configure **somente neste repositório `site-bomfim`:**
 | `SSH_PORT` | `22` (opcional) |
 | `DEPLOY_PATH` | **`/opt/site-bomfim`** |
 
+## Primeiro deploy — ordem única
+
+1. **PC:** `ssh -i ~/.ssh/site_bomfim_deploy root@SEU_IP "echo ok"`
+2. **GitHub:** secrets `SSH_HOST`, `SSH_USER`, `SSH_PRIVATE_KEY`, `DEPLOY_PATH=/opt/site-bomfim`
+3. **Actions:** *Deploy site + API* → Run workflow (ou bootstrap no Vultr)
+4. **Vultr (uma vez):** `cp deploy/systemd/bomfim-site-api.service.example` → systemd enable (o `post-deploy.sh` também tenta instalar)
+5. **Vultr (nginx):** `deploy/nginx/site-bomfim.4lia.com.br.conf.example` → validar em `https://site-bomfim.4lia.com.br/site-bomfim/`
+6. **KingHost:** publicar `dist/` + proxy `/api/` para a VPS se `www.4lia.com.br/site-bomfim/` for o destino final
+7. **`.env`:** `BOMFIM_DATABASE_URL` + `bash scripts/server/ensure-schema.sh`
+
 ## Primeiro deploy (checklist)
 
 ### 1. GitHub (`site-bomfim` apenas)

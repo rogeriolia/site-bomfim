@@ -24,7 +24,13 @@ Só a API (produção/local): `python run.py --api-only`.
 O build de produção usa a base `/site-bomfim/`. A URL de testes é
 `https://www.4lia.com.br/site-bomfim/`.
 
-No servidor atual, a pasta inteira do projeto é espelhada em `/www/site-bomfim/`.
+No servidor Vultr, o deploy vai para **`/opt/site-bomfim`** (GitHub Actions ou
+`scripts/server/bootstrap-from-github.sh`). URL de pré-visualização na VPS:
+`https://site-bomfim.4lia.com.br/site-bomfim/` (nginx em
+`deploy/nginx/site-bomfim.4lia.com.br.conf.example`). A URL pública
+`https://www.4lia.com.br/site-bomfim/` está na **KingHost** — sincronize `dist/`
+e `.htaccess` para lá quando for publicar.
+
 O arquivo `.htaccess` da raiz serve `dist/index.html`, mapeia
 `/site-bomfim/assets/*` para `dist/assets/*` e encaminha URLs internas do
 React Router para o mesmo HTML. Para publicar alterações, execute `npm run build`
