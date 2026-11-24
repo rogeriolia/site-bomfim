@@ -23,11 +23,24 @@ export function getPageMetadata(pathname) {
   }
   if (paidPages[pathname]) return paidPages[pathname]
   if (pathname === '/estudo-marca-bomfim') return { title: 'Estudo de assinaturas da marca', heading: 'Duas assinaturas. A mesma origem.', description: 'Comparação de propostas Bomfim log e Bomfim Cargas em aplicações.', image: '/assets/brand-tests/bomfim-cargas.png', area: 'utility', indexable: false }
+  const service =
+    services.find(item => pathname === `/solucoes/${item.slug}`) ||
+    (pathname === '/solucoes' ? services.find(item => item.slug === 'coleta-programada') : null)
+  if (service) {
+    return {
+      title: `${service.name} para empresas`,
+      heading: service.title,
+      description: service.metaDescription || service.intro,
+      image: service.heroImage || service.illustration,
+      imageAlt: service.visualAlt,
+      area: 'institutional',
+      indexable: true,
+      canonicalPath: `/solucoes/${service.slug}`,
+    }
+  }
   if (pages[pathname]) return pages[pathname]
   const article = articles.find(item => pathname === `/conteudos/${item.slug}`)
   if (article) return { title: article.title, heading: article.title, description: article.summary, image: article.image, imageAlt: article.imageAlt, area: 'content', type: 'article', indexable: true }
-  const service = services.find(item => pathname === `/solucoes/${item.slug}`)
-  if (service) return { title: `${service.name} para empresas`, heading: service.title, description: service.metaDescription || service.intro, image: service.illustration, imageAlt: service.visualAlt, area: 'institutional', indexable: true }
   const route = routes.find(item => pathname === `/rotas/${item.id}`)
   if (route) return { title: `${route.origin} para ${route.destination}: distribuição e estoques`, heading: `${route.origin} → ${route.destination}`, description: `Planeje a distribuição de ${route.origin} para ${route.destination}. Confira os pontos de referência e reúna as informações para avaliar sua operação com a Bomfim.`, image: getRouteImage(route), area: 'institutional', indexable: true }
   return { title: 'Página não encontrada', heading: 'Página não encontrada', description: 'O endereço solicitado não foi encontrado. Explore as soluções, rotas e conteúdos da Bomfim Cargas.', image: '/assets/visuals-2026/05-hero-corredores.webp', area: 'utility', indexable: false }

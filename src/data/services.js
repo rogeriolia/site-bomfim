@@ -133,7 +133,7 @@ export const services = [
       faqTitle: 'Dúvidas comuns'
     },
     illustration: '/assets/services/coleta-programada-3d.webp',
-    heroImage: '/assets/visuals-2026/12-triagem.webp',
+    heroImage: '/assets/visuals-2026/03-hero-coleta.webp',
     scenesImage: '/assets/services/coleta-programada-scenes.webp',
     scenesAlt: 'Carga pronta na doca, equipe confirmando volumes no local de coleta e caminhão chegando para a retirada.',
     scenesHeading: 'Da carga pronta à retirada confirmada.',

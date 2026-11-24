@@ -1665,3 +1665,30 @@ body:has(.delivery-alert) .service-detail__hero-grid { padding-top: clamp(112px,
   .quote-wizard__actions button { min-width: 0; flex: 1; }
 }
 @media (max-width: 380px) { .route-region-picker__city-columns { grid-template-columns: 1fr; } .quote-wizard__route-summary { flex-wrap: wrap; } .quote-wizard__route-summary button { margin-left: 28px; } }
+
+/* Solution detail (cards mode): neutralize legacy full-bleed hero rules above. */
+.service-detail--cards .service-detail__hero {
+  position: relative;
+  display: block;
+  align-items: stretch;
+  overflow: hidden;
+}
+.service-detail--cards .service-detail__hero-grid {
+  display: block;
+  grid-template-columns: none;
+  padding-block: 0;
+}
+body:has(.delivery-alert) .service-detail--cards .service-detail__hero-grid {
+  padding-top: 0;
+}
+@media (max-width: 767px) {
+  .service-detail--cards .service-detail__hero {
+    min-height: clamp(220px, 55vw, 280px);
+  }
+  .service-detail--cards .service-detail__hero-grid {
+    padding-block: 0;
+  }
+  body:has(.delivery-alert) .service-detail--cards .service-detail__hero-grid {
+    padding-top: 0;
+  }
+}

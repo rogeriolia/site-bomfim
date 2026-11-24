@@ -1,0 +1,228 @@
+/* Solution detail: sidebar + stacked editorial cards (mock layout). */
+.service-detail--cards {
+  background: var(--canvas);
+  padding-block: clamp(32px, 4.5vw, 48px);
+}
+
+.service-detail--cards .service-detail__shell {
+  display: grid;
+  grid-template-columns: minmax(200px, 236px) minmax(0, 1fr);
+  gap: clamp(32px, 4.5vw, 56px);
+  align-items: start;
+}
+
+.service-detail--cards .service-detail__sidebar {
+  position: sticky;
+  top: 28px;
+}
+
+.service-detail--cards .service-detail__index {
+  display: grid;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.service-detail--cards .service-detail__index > strong {
+  margin-bottom: 6px;
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.service-detail--cards .service-detail__index > a {
+  padding-block: 5px;
+  color: var(--subtle);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.service-detail--cards .service-detail__index > a:hover {
+  color: var(--brand);
+}
+
+.service-detail--cards .service-detail__index > a[aria-current='page'] {
+  color: var(--ink);
+  font-weight: 800;
+}
+
+.service-detail--cards .service-detail__main {
+  display: grid;
+  gap: 20px;
+  min-width: 0;
+}
+
+.service-detail--cards .service-detail__card {
+  overflow: hidden;
+  border: 1px solid rgb(0 0 0 / 6%);
+  border-radius: var(--radius-lg);
+  background: #fff;
+  box-shadow: 0 8px 32px rgb(15 28 45 / 6%);
+}
+
+.service-detail--cards .service-detail__hero {
+  position: relative;
+  display: block;
+  min-height: clamp(280px, 32vw, 340px);
+  margin: 0;
+  padding: clamp(36px, 5vw, 52px) clamp(28px, 4vw, 44px);
+  border: 0;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  background-color: var(--dark-deep);
+  background-image: linear-gradient(
+      102deg,
+      rgb(10 28 48 / 92%) 0%,
+      rgb(10 28 48 / 74%) 42%,
+      rgb(10 28 48 / 22%) 100%
+    ),
+    var(--service-hero-image);
+  background-position: 72% center;
+  background-size: cover;
+  color: #fff;
+}
+
+.service-detail--cards .service-detail__hero-grid {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.service-detail--cards .service-detail__hero-copy {
+  max-width: min(620px, 85%);
+}
+
+.service-detail--cards .service-detail__hero h1 {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(2rem, 3.2vw, 3rem);
+  line-height: 1.08;
+}
+
+.service-detail--cards .service-detail__lead {
+  margin-top: 16px;
+  color: #f0f3f7;
+  font-size: clamp(0.96rem, 1.15vw, 1.06rem);
+  line-height: 1.65;
+}
+
+.service-detail--cards .service-detail__actions {
+  margin-top: 24px;
+}
+
+.service-detail--cards .service-detail__audience {
+  padding: clamp(28px, 4vw, 40px) clamp(28px, 4vw, 44px) clamp(32px, 4.5vw, 44px);
+  background: #fff;
+}
+
+.service-detail--cards .service-detail__process {
+  padding: clamp(28px, 4vw, 40px) clamp(28px, 4vw, 44px) 0;
+  border-top: 0;
+}
+
+.service-detail--cards .service-detail__commercial {
+  margin: clamp(20px, 3vw, 28px) clamp(28px, 4vw, 44px);
+  overflow: hidden;
+  border: 0;
+  border-radius: 14px;
+  background: var(--canvas);
+}
+
+.service-detail--cards .service-detail__faq {
+  padding: clamp(8px, 1.5vw, 12px) clamp(28px, 4vw, 44px) clamp(32px, 4.5vw, 44px);
+}
+
+.service-detail--cards .service-detail__text-action {
+  display: inline-flex;
+  min-height: 46px;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--brand);
+  text-decoration: none;
+}
+
+.service-detail--cards .service-detail__text-action:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.service-detail__faq-list .service-detail__faq-chevron {
+  display: grid;
+  flex: none;
+  width: 22px;
+  height: 22px;
+  place-items: center;
+  border: 1.75px solid var(--brand);
+  border-radius: 50%;
+  color: var(--brand);
+}
+
+.service-detail__faq-list .service-detail__faq-chevron svg {
+  display: block;
+}
+
+body:has(.delivery-alert) .service-detail--cards {
+  padding-top: clamp(20px, 3vw, 32px);
+}
+
+@media (max-width: 1000px) {
+  .service-detail--cards .service-detail__shell {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+
+  .service-detail--cards .service-detail__sidebar {
+    position: static;
+  }
+
+  .service-detail--cards .service-detail__index {
+    padding: 18px 20px;
+    border-radius: var(--radius-md);
+    background: #fff;
+    border: 1px solid rgb(0 0 0 / 6%);
+  }
+
+  .service-detail--cards .service-detail__index > a {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+  }
+}
+
+@media (max-width: 767px) {
+  .service-detail--cards {
+    padding-block: 20px 32px;
+  }
+
+  .service-detail--cards .service-detail__hero {
+    min-height: 240px;
+    padding: 32px 22px;
+    background-image: linear-gradient(
+        100deg,
+        rgb(10 28 48 / 88%) 0%,
+        rgb(10 28 48 / 55%) 100%
+      ),
+      var(--service-hero-image);
+    background-position: 65% center;
+  }
+
+  .service-detail--cards .service-detail__hero-copy {
+    max-width: 100%;
+  }
+
+  .service-detail--cards .service-detail__hero h1 {
+    font-size: clamp(1.85rem, 7.5vw, 2.35rem);
+  }
+
+  .service-detail--cards .service-detail__audience,
+  .service-detail--cards .service-detail__process,
+  .service-detail--cards .service-detail__faq {
+    padding-inline: 22px;
+  }
+
+  .service-detail--cards .service-detail__commercial {
+    margin-inline: 22px;
+  }
+}

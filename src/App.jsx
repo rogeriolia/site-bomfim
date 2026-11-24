@@ -28,7 +28,6 @@ const ConversionPage = lazy(() => import('./pages/Conversion.jsx'))
 const QuoteWizard = lazy(() => import('./pages/QuoteWizard.jsx'))
 const ServiceDetail = lazy(() => import('./pages/ServiceDetail.jsx'))
 const NotificationsPage = lazy(() => import('./pages/Notifications.jsx'))
-const SolutionsOverview = lazy(() => import('./pages/SolutionsOverview.jsx'))
 const DesignSystem = lazy(() => import('./pages/DesignSystem.jsx'))
 const VisualLibrary = lazy(() => import('./pages/VisualLibrary.jsx'))
 const ContactPage = lazy(() => import('./pages/Information.jsx').then(module => ({ default: module.ContactPage })))
@@ -114,8 +113,7 @@ function SitePages({ location }) {
         <Route path="/rotas/:id" element={<CorridorPage />} />
         <Route path="/conteudos" element={<ContentPage />} />
         <Route path="/conteudos/:slug" element={<ArticlePage />} />
-        <Route path="/solucoes" element={<SolutionsOverview />} />
-        <Route path="/solucoes/:slug" element={<ServiceDetail />} />
+        <Route path="/solucoes/:slug?" element={<ServiceDetail />} />
         <Route path="/tecnologia" element={<InstitutionalPage pageKey="tecnologia" />} />
         <Route path="/estrutura" element={<InstitutionalPage pageKey="estrutura" />} />
         <Route path="/quem-somos" element={<InstitutionalPage pageKey="quem-somos" />} />
@@ -156,8 +154,7 @@ function SitePages({ location }) {
 function getPage(path) {
   if (path === '/rotas/planejar') return RoutePlanningPage
   if (path === '/rotas' || path.startsWith('/rotas/')) return RoutesPage
-  if (path === '/solucoes') return SolutionsOverview
-  if (path.startsWith('/solucoes/')) return ServiceDetail
+  if (path === '/solucoes' || path.startsWith('/solucoes/')) return ServiceDetail
   if (['/estrutura', '/tecnologia', '/quem-somos'].includes(path)) return InstitutionalPage
   if (['/contato', '/comercial', '/coleta'].includes(path)) return ConversionPage
   if (path === '/cotacao' || path === '/lp/cotacao-completa') return QuoteWizard

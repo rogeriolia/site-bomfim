@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { CircleHelp } from 'lucide-react'
+import ServiceFaqChevron from './ServiceFaqChevron.jsx'
 import { Dialog } from './UI.jsx'
 import { cargoProfile } from '../data/cargoProfile.js'
 
@@ -7,7 +7,7 @@ export default function CargoRestrictionsFaq() {
   const [open, setOpen] = useState(false)
   return <>
     <details>
-      <summary><CircleHelp size={19} aria-hidden="true" />Quais mercadorias têm restrições de transporte?</summary>
+      <summary><ServiceFaqChevron />Quais mercadorias têm restrições de transporte?</summary>
       <div className="service-detail__restrictions-answer">
         <p>Algumas mercadorias não são transportadas. Outras exigem documentos ou condições específicas antes da contratação.</p>
         <ul>
