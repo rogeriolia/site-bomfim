@@ -4,6 +4,7 @@ import { ArrowLeft, ArrowRight, Check, X } from 'lucide-react'
 import { Button, Field } from './UI.jsx'
 import RouteContactForm from './RouteContactForm.jsx'
 import FileDropzone from './FileDropzone.jsx'
+import StateFlag from './StateFlag.jsx'
 import '../styles/cep-planner.css'
 import cityData from '../../public/data/bomfim-cities.json'
 
@@ -13,9 +14,6 @@ const steps = ['Origem', 'Destinos', 'Sua carga', 'Revisão', 'Seu contato']
 const packagingOptions = [['caixa', 'Caixa'], ['fardo', 'Fardo'], ['rolo', 'Rolo'], ['engradado', 'Engradado'], ['outro', 'Outro']]
 const numberValue = value => Number(String(value).replace(',', '.')) || 0
 const originUnits = { PE: 'JABOATAO DOS GUARARAPES', CE: 'EUSEBIO', RN: 'PARNAMIRIM', PB: 'JOAO PESSOA', AL: 'MACEIO', SE: 'ARACAJU', BA: 'SIMOES FILHO' }
-const stateFlags = { AL: 'Bandeira de Alagoas.svg', BA: 'Bandeira da Bahia.svg', CE: 'Bandeira do Ceará.svg', MA: 'Bandeira do Maranhão.svg', PB: 'Bandeira da Paraíba.svg', PE: 'Bandeira de Pernambuco.svg', PI: 'Bandeira do Piauí.svg', RN: 'Bandeira do Rio Grande do Norte.svg', SE: 'Bandeira de Sergipe.svg' }
-function StateFlag({ uf }) { return stateFlags[uf] ? <img className="planner-state-flag" src={`https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(stateFlags[uf])}`} alt={`Bandeira de ${uf}`} loading="lazy" width="28" height="20" onError={event => { event.currentTarget.hidden = true }} /> : null }
-
 export default function CepRoutePlanner() {
   const [step, setStep] = useState(0)
   const [cities] = useState(cityData.cities)
