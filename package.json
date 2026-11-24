@@ -8,7 +8,8 @@
     "dev:vite": "vite --host 0.0.0.0",
     "build": "node scripts/build-team-gallery.mjs && vite build",
     "preview": "vite preview --host 0.0.0.0",
-    "api": "python run.py --api-only"
+    "api": "python run.py --api-only",
+    "deploy": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/local/publish-vultr.ps1"
   },
   "dependencies": {
     "lucide-react": "^0.468.0",

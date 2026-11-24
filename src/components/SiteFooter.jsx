@@ -20,7 +20,7 @@ export default function SiteFooter({ compact = false }) {
       <div className="site-footer__layout">
         <div className="site-footer__brand">
           <Link to="/" aria-label="Bomfim Cargas — início" className="site-footer__logo"><img src="/assets/brand/bomfim-cargas.webp" alt="Bomfim Cargas" className="logo-white" width="160" height="48" /></Link>
-          <p>Transporte e distribuição de cargas fracionadas no Nordeste. Desde 1991, conectando empresas, clientes e destinos.</p>
+          <p>Transporte e distribuição de cargas fracionadas no Nordeste. Há mais de 30 anos conectando empresas, clientes e destinos.</p>
           <div className="site-footer__contacts">
             <a href="tel:08003388700"><Phone size={19} aria-hidden="true" /><span><small>Ligações · seg–sex, 7h30–17h30</small><strong>0800 338 8700</strong></span></a>
             <a href={whatsappUrl} target="_blank" rel="noreferrer" aria-label="WhatsApp 24 horas — 0800 338 8700"><MessageCircle size={20} aria-hidden="true" /><span><small>WhatsApp · 24 horas</small><strong>0800 338 8700</strong></span></a>

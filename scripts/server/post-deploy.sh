@@ -74,6 +74,8 @@ fi
 
 bash "$ROOT/scripts/server/ensure-schema.sh" || true
 
+bash "$ROOT/scripts/server/sync-nginx.sh" 2>/dev/null || true
+
 bash "$ROOT/scripts/server/restart-services.sh" || {
   echo "Aviso: serviço ainda não configurado (instale bomfim-site-api no systemd)." >&2
 }

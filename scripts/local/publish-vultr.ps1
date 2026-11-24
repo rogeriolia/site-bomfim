@@ -26,6 +26,17 @@ if (-not (Test-Path $KeyPath)) {
   exit 1
 }
 
-$bootstrap = "curl -fsSL https://raw.githubusercontent.com/rogeriolia/site-bomfim/main/scripts/server/bootstrap-from-github.sh -o /tmp/bootstrap.sh && bash /tmp/bootstrap.sh"
-Write-Host "Publicando no Vultr via bootstrap (GitHub main -> /opt/site-bomfim)..."
+$bootstrap = @"
+set -e
+curl -fsSL https://raw.githubusercontent.com/rogeriolia/site-bomfim/main/scripts/server/bootstrap-from-github.sh -o /tmp/bootstrap.sh
+bash /tmp/bootstrap.sh
+if [[ -x /opt/site-bomfim/scripts/server/sync-nginx.sh ]]; then
+  bash /opt/site-bomfim/scripts/server/sync-nginx.sh || true
+elif [[ -f /opt/site-bomfim/deploy/nginx/site-bomfim.4lia.com.br.conf.example ]]; then
+  cp /opt/site-bomfim/deploy/nginx/site-bomfim.4lia.com.br.conf.example /etc/nginx/sites-available/site-bomfim.4lia.com.br
+  ln -sf /etc/nginx/sites-available/site-bomfim.4lia.com.br /etc/nginx/sites-enabled/ 2>/dev/null || true
+  nginx -t && systemctl reload nginx
+fi
+"@
+Write-Host "Publicando no Vultr (main -> /opt/site-bomfim). Nao usa GitHub Actions."
 ssh -i $KeyPath -o BatchMode=yes $HostTarget $bootstrap
