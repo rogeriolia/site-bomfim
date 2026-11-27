@@ -11,6 +11,7 @@ class Settings(BaseSettings):
     )
 
     bomfim_database_url: str = ""
+    bomfim_site_database_url: str = ""
     bomfim_brevo_api_key: str = ""
     bomfim_from_email: str = ""
     bomfim_from_name: str = "Bomfim Cargas"

@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 
-from backend.routes import coverage, leads, telemetry
+from backend.routes import coverage, leads, telemetry, unidades
 
 app = FastAPI(title="Bomfim Site API", docs_url=None, redoc_url=None)
 
@@ -14,6 +14,7 @@ def api_root() -> dict:
             "POST /api/leads.php",
             "POST /api/telemetry.php",
             "POST /api/coverage-check.php",
+            "GET /api/unidades.php",
         ],
     }
 
@@ -21,3 +22,4 @@ def api_root() -> dict:
 app.include_router(leads.router)
 app.include_router(telemetry.router)
 app.include_router(coverage.router)
+app.include_router(unidades.router)

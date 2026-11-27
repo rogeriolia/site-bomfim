@@ -58,7 +58,7 @@ jobs:
         run: |
           tar czf release.tgz \
             dist backend run.py requirements.txt .htaccess \
-            api/schema.sql scripts/server deploy
+            api scripts/server deploy
 
       - name: Enviar release ao servidor
         uses: appleboy/scp-action@v0.1.7

@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Search, MapPinned, Building2, ArrowRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
-import units from '../data/units.js'
+import { fetchUnits } from '../utils/unitsApi.js'
 import { Dialog } from './UI.jsx'
 
 const policy = { standard: 'Atendimento padrão', exception: 'Avaliação comercial para clientes antigos' }
@@ -12,7 +12,9 @@ export default function CoverageModal({ triggerLabel = 'Consultar cobertura' }) 
   const [open, setOpen] = useState(false)
   const [query, setQuery] = useState('')
   const [cities, setCities] = useState([])
+  const [units, setUnits] = useState([])
   const [loading, setLoading] = useState(false)
+  const [loadingUnits, setLoadingUnits] = useState(false)
 
   useEffect(() => {
     if (!open || cities.length) return
@@ -21,6 +23,17 @@ export default function CoverageModal({ triggerLabel = 'Consultar cobertura' }) 
     import('../../public/data/bomfim-cities.json').then(({ default: data }) => { if (!controller.signal.aborted) setCities(data.cities || []) }).catch(() => { if (!controller.signal.aborted) setCities([]) }).finally(() => { if (!controller.signal.aborted) setLoading(false) })
     return () => controller.abort()
   }, [open, cities.length])
+
+  useEffect(() => {
+    if (!open || units.length) return
+    let active = true
+    setLoadingUnits(true)
+    fetchUnits()
+      .then(list => { if (active) setUnits(list) })
+      .catch(() => { if (active) setUnits([]) })
+      .finally(() => { if (active) setLoadingUnits(false) })
+    return () => { active = false }
+  }, [open, units.length])
 
   const matches = useMemo(() => {
     const normalize = value => String(value).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase('pt-BR')
@@ -46,7 +59,7 @@ export default function CoverageModal({ triggerLabel = 'Consultar cobertura' }) 
           <div className="coverage-results" aria-live="polite">{loading && <p>Carregando a base de cidades…</p>}{!loading && query && !matches.length && <p>Nenhuma cidade encontrada. Confira o nome ou CEP.</p>}{matches.map(item => <div className="coverage-result" key={`${item.uf}-${item.city}-${item.unit}`}><div><strong>{prettyCity(item.city)} · {item.uf}</strong><small>{query.replace(/\D/g, '').length === 8 ? `CEP ${item.cepFrom} a ${item.cepTo} · ` : ''}Unidade {unitNames[item.unit] || item.unit}</small></div><span className={item.availability === 'exception' ? 'is-exception' : ''}>{policy[item.availability]}</span></div>)}{!query && !loading && <p>Digite uma cidade, CEP ou UF para consultar a cobertura.</p>}{query && matches.length === 10 && <p className="coverage-results__hint">Mostrando até 10 resultados. Refine a busca para encontrar uma cidade específica.</p>}</div>
           <p className="mt-5 text-xs leading-5 text-[var(--muted)]">A consulta orienta a descoberta. A confirmação final considera endereço, carga, janela de recebimento e condições comerciais.</p>
         </section>
-        <aside className="coverage-dialog__sidebar" aria-label="Unidades Bomfim"><div className="coverage-dialog__sidebar-heading"><Building2 size={18} aria-hidden="true"/><div><strong>8 unidades no Nordeste</strong><span>Estrutura para atender sua operação</span></div></div><ul>{units.map(unit => <li key={`${unit.uf}-${unit.name}`}><span>{unit.name}</span><small>{unit.state}</small></li>)}</ul><Link to="/unidades" onClick={() => setOpen(false)}>Endereços e telefones <ArrowRight size={15} aria-hidden="true" /></Link><Link to="/rotas/planejar" onClick={() => setOpen(false)}>Planejar uma rota <ArrowRight size={15} aria-hidden="true" /></Link></aside>
+        <aside className="coverage-dialog__sidebar" aria-label="Unidades Bomfim"><div className="coverage-dialog__sidebar-heading"><Building2 size={18} aria-hidden="true"/><div><strong>{loadingUnits ? '…' : units.length} unidades no Nordeste</strong><span>Estrutura para atender sua operação</span></div></div><ul>{loadingUnits && !units.length && <li><span>Carregando unidades…</span></li>}{units.map(unit => <li key={`${unit.uf}-${unit.code}`}><span>{unit.name}</span><small>{unit.state}</small></li>)}</ul><Link to="/unidades" onClick={() => setOpen(false)}>Endereços e telefones <ArrowRight size={15} aria-hidden="true" /></Link><Link to="/rotas/planejar" onClick={() => setOpen(false)}>Planejar uma rota <ArrowRight size={15} aria-hidden="true" /></Link></aside>
       </div>
     </Dialog>
   </>

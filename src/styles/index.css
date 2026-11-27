@@ -298,9 +298,9 @@ img { display: block; max-width: 100%; }
 .unit-row__address { display: flex; align-items: flex-start; gap: 9px; margin-top: 12px; color: var(--muted); font-size: .84rem; line-height: 1.55; }
 .unit-row__address svg { flex: none; margin-top: 2px; color: var(--brand); }
 .unit-row__contact { display: inline-flex; min-height: 40px; align-items: center; gap: 8px; margin-top: 9px; color: var(--brand); font-weight: 800; }
-.unit-row__manager { display: flex; min-height: 112px; align-items: center; gap: 12px; border-left: 1px solid var(--line); padding: 12px 18px; }
-.unit-row__manager-icon { display: grid; width: 42px; height: 42px; flex: none; place-items: center; border-radius: 13px; background: #fff0f3; color: var(--brand); }
+.unit-row__manager { display: flex; min-height: 112px; flex-direction: column; justify-content: center; gap: 4px; border-left: 1px solid var(--line); padding: 12px 18px; }
 .unit-row__manager-label { font-size: .82rem; font-weight: 800; }
+.unit-row__manager-name { margin-top: 4px; font-size: .8rem; font-weight: 700; }
 .unit-row__pending { margin-top: 5px; color: var(--muted); font-size: .78rem; line-height: 1.45; }
 .units-service { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-top: 30px; border-radius: 16px; background: var(--dark); padding: 22px 26px; color: #fff; }
 .units-service p { color: #ffffffbd; font-size: .84rem; }

@@ -73,6 +73,7 @@ if [[ -f "$ROOT/.env" ]]; then
 fi
 
 bash "$ROOT/scripts/server/ensure-schema.sh" || true
+bash "$ROOT/scripts/server/ensure-site-schema.sh" || true
 
 bash "$ROOT/scripts/server/sync-nginx.sh" 2>/dev/null || true
 

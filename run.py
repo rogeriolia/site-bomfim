@@ -13,6 +13,8 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
+from backend.ssh_tunnel import start_site_db_tunnel, stop_site_db_tunnel
+
 ROOT = Path(__file__).resolve().parent
 SITE_URL = os.getenv("BOMFIM_DEV_URL", "http://localhost:5173/")
 API_PORT = int(os.getenv("BOMFIM_API_PORT", "5183"))
@@ -44,7 +46,7 @@ def _require_npm() -> str:
     return npm
 
 
-def _run_dev(host: str, port: int, reload: bool) -> None:
+def _run_dev(host: str, port: int, reload: bool, tunnel_proc: subprocess.Popen | None) -> None:
     npm = _require_npm()
     _banner()
 
@@ -86,6 +88,7 @@ def _run_dev(host: str, port: int, reload: bool) -> None:
                 proc.wait(timeout=8)
             except subprocess.TimeoutExpired:
                 proc.kill()
+        stop_site_db_tunnel(tunnel_proc)
 
     try:
         while True:
@@ -135,10 +138,16 @@ def main() -> None:
     parser.add_argument("--reload", action="store_true", help="Recarregar API ao editar código (dev)")
     args = parser.parse_args()
 
-    if args.api_only:
-        _run_api_only(args.host, args.port, args.reload)
-    else:
-        _run_dev(args.host, args.port, args.reload)
+    tunnel_proc = start_site_db_tunnel()
+    if tunnel_proc is not None:
+        os.environ["BOMFIM_SSH_TUNNEL_ACTIVE"] = "1"
+    try:
+        if args.api_only:
+            _run_api_only(args.host, args.port, args.reload)
+        else:
+            _run_dev(args.host, args.port, args.reload, tunnel_proc)
+    finally:
+        stop_site_db_tunnel(tunnel_proc)
 
 
 if __name__ == "__main__":
