@@ -9,7 +9,7 @@ export async function fetchUnits({ signal } = {}) {
     return cachedUnits
   }
 
-  const response = await fetch('/api/unidades.php', {
+  const response = await fetch(`${import.meta.env.BASE_URL}api/unidades.php`, {
     signal,
     headers: { Accept: 'application/json' },
   })
