@@ -72,6 +72,7 @@ if [[ -f "$ROOT/.env" ]]; then
   run_privileged chmod 640 "$ROOT/.env" 2>/dev/null || true
 fi
 
+bash "$ROOT/scripts/server/sync-env-from-db-vars.sh" || true
 bash "$ROOT/scripts/server/ensure-schema.sh" || true
 bash "$ROOT/scripts/server/ensure-site-schema.sh" || true
 
